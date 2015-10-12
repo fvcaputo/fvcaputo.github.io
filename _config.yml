@@ -1,0 +1,11 @@
+# Site settings
+title: Felipe Caputo blog
+description: > # this means to ignore newlines until "baseurl:"
+  Ramblings of a computer scientist.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://fvcaputo.github.io/" # the base hostname & protocol for your site
+twitter_username: nothing
+github_username: fvcaputo
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Felipe Caputo blog</title>
+    <description>Ramblings of a computer scientist.
+</description>
+    <link>http://fvcaputo.github.io//</link>
+    <atom:link href="http://fvcaputo.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 11 Oct 2015 18:39:05 -0400</pubDate>
+    <lastBuildDate>Sun, 11 Oct 2015 18:39:05 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Is It Working Yet?</title>
+        <description>&lt;p&gt;Hey, so this is a post. The first post of this blog actually, as you can see.&lt;/p&gt;
+
+&lt;p&gt;Took me a bit of time to get everything working like I wanted to. Jekyll made everything really easy, but not knowing HTML or CSS made things harder, so I had to learn it as I go. In the end things worked out alright.&lt;/p&gt;
+
+&lt;p&gt;So now the blog is up and running. Here I’ll be posting about some of my pet projects, which the majority will be most likely related to computer graphics because that’s my jam. But you never know.&lt;/p&gt;
+
+&lt;p&gt;Stick around, I’ll be making some posts whener I got the time. :)&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Oct 2015 08:07:00 -0400</pubDate>
+        <link>http://fvcaputo.github.io//2015/10/11/is-it-working-yet.html</link>
+        <guid isPermaLink="true">http://fvcaputo.github.io//2015/10/11/is-it-working-yet.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
