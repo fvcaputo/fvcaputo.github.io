@@ -6,6 +6,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://fvcaputo.github.io/" # the base hostname & protocol for your site
 twitter_username: nothing
 github_username: fvcaputo
+youtube_link: UCh_nXt6yvZHSAXBb06hesdA
+youtube_username: channel
 
 # Build settings
 markdown: kramdown
