@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "A C++ Framework For Interaction With OpenGL"
-subtitle: <div style="text-align:center;margin-top:-15px;padding-bottom:5px;"><img src="/assets/framework3.png"></div>Let’s talk a little bit about how to make stuff actually show using OpenGL.
+subtitle: <div style="text-align:center;margin-top:-15px;padding-bottom:5px;"><img src="/assets/2015-11-10-opengl-framework/framework3.png"></div>Let’s talk a little bit about how to make stuff actually show using OpenGL.
 date:   2015-11-11 12:07:00
 language: en
 ---
 <div style="text-align:center;padding-bottom:10px;">
-<img src="/assets/framework3.png">
+<img src="/assets/2015-11-10-opengl-framework/framework3.png">
 <div style="text-align:center;"><font color="gray" size="2px">A few things you can create using the framework tools.</font></div>
 </div>
 
