@@ -46,11 +46,39 @@ The emitter is set up with a number of parameters that can be changed depending 
 
 So the particle emitter is really malleable and we can use it in all sorts of different ways. We can say where the particles are going to created and how they are going to be moving. We can add variance to those values if we want to, if we don't what the emission of every single particle to be the same. We can play around with all of that to get some really cool results.
 
+The particle emitter itself is a really simple class, and it's generic in the sense that it can be used for any sort of particle. If you check the code you will see:
+{% highlight csharp %}
+public class ParticleEmitter {
+    // Our Particle
+    public SandParticle[] particles;
+    ...
+    // Constructor
+    public ParticleEmitter(Vector3 newPos, Vector3 newPosVar, float newYaw, float newYawVar, float newPitch, float newPitchVar, 
+        int newTotalParticles, float newEmissionRateSec, int newEmitsPerRate, float newLife) { ... }
+    ...
+    // Emit will return a particle list, which will be rendered
+    public void updateParticles(float dt) { ... }
+}
+{% endhighlight %}
+Above you can see just a few parts of the code I'm going to mention. The emitter needs to have a kind of particle inside of it, in this case it's a class called "SandParticle". Again, it could be something else, provided you made the necessary changes. Then constructor would be changed if you wanted other values, and _updateParticles_ would call the constructor of the particles you are using and the update function that particle class should have.
+
+
 # The Particles and How They Move
 
 Well, here is where the specifics of the system actually start. After an emitter is created then we actually need to start it. To do that we need to update the values of every single particle, and of course this depends on how our particles look and how we want them to move.
 
 So first let's talk about our particles. What I want is to simulate sand, therefore those particles will need to be affected by physics. For this system every particle will be a sphere that will have a certain mass and radius. Each particle will have velocity, momentum and force for both translational and rotation motion. Particles are also affected by external foces such as gravity and friction. Since I am modeling it in such a way that all particles are spheres we can also do some approximations to facilitate calculations, such as the inertia tensor used to calculate the angular velocity. This is pretty much the standard you would expect from any physics engine. What really creates the believable movement of sand is the behavior of the particles during collisions with other objects.
+
+Checking the code the SandParticle class has these main functions:
+{% highlight csharp %}
+// Constructor of a particle, given a position and a start force. It's called by the emitter
+public SandParticle(Vector3 startPosition, Vector3 startForce) { ... }
+...
+// This is how we update this particle. We need a time step dt, which will be used in the integration
+// and all the other particles alive to check for collisions
+public void updateParticle(float dt, SandParticle[] otherParticles, int aliveParticles) { ... }
+{% endhighlight %}
+I will be talking more about updating the particle and the collisions below. These functions should always be called my the emitter, which in Unity should be instantiated on the script that will actually run during the scene.
 
 #### Collisions
 
@@ -69,7 +97,7 @@ $$
 \begin{equation*}
 \begin{split}
 F_{n} & = - (k_{n}\delta^{3/2} + \gamma_{n}\dot{\delta}\delta^{1/2}) n \\ 
-F_{t} & = - min (\mu||F_{n}||,k_{s}||v_{t}||) \frac{v_{t}|}{||v_{t}||}
+F_{t} & = - min (\mu||F_{n}||,k_{s}||v_{t}||) \frac{v_{t}}{||v_{t}||}
 \end{split}
 \end{equation*}
 $$
