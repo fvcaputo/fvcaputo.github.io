@@ -135,7 +135,7 @@ The video above shows the application in action. It runs on any Android smartpho
 
 Another application that I also endedup developing was a way to display this characer in a virtual reality experience for that I used the AR/VR glasses Epson Moverio BT-200. These glasses use Android as their OS, so it's possible to develop an Unity app for android and deploy it to the glasses.
 
-Of course this application is different from the previous one made for AR. Here I used Moveio's plugin for Unity, which includes APIs to access sensors and other components of the headset. 
+Of course this application is different from the previous one made for AR. Here I used Moverio's plugin for Unity, which includes APIs to access sensors and other components of the headset. 
 
 In the scene I created there is a virtual stage and a starting position for the virtual character with respect to that stage. This is where the animation will be displayed, and the camera that will see this scene is replaced by the Moverio "camera". The camera is the object that is actually affected by the glasses, a script is attached to the object and it controls the orientation of the camera based on the gyroscope data from the glasses. This allows the user to see the scene in different angles depending on where he is physically looking.
 
