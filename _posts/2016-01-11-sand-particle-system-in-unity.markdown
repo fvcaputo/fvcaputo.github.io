@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  "Simulating Sand Using Particle Systems"
-subtitle: <div style="text-align:center;margin-top:-15px;padding-bottom:5px;"><img src="/assets/2016-01-11-sand-particle-system-in-unity/fallingSandObstables1.png" style="width:33%;margin-right:0.5%"><img src="/assets/2016-01-11-sand-particle-system-in-unity/fallingSandObstables2.png" style="width:33%;margin-right:0.5%"><img src="/assets/2016-01-11-sand-particle-system-in-unity/fallingSandObstables3.png" style="width:33%;"></div>Particle systems are fun by itself and we can use it to simulate all sorts of different things, so I decided to use one to simulate sand. This time using Unity as a framework.
+subtitle: <div style="text-align:center;margin-top:-15px;padding-bottom:5px;"><img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandObstables1.png" style="width:33%;margin-right:0.5%"><img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandObstables2.png" style="width:33%;margin-right:0.5%"><img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandObstables3.png" style="width:33%;"></div>Particle systems are fun by itself and we can use it to simulate all sorts of different things, so I decided to use one to simulate sand. This time using Unity as a framework.
 date:   2016-01-11 12:00:00
 language: en
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="/assets/2016-01-11-sand-particle-system-in-unity/fallingSandObstables1.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="/assets/2016-01-11-sand-particle-system-in-unity/fallingSandObstables2.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="/assets/2016-01-11-sand-particle-system-in-unity/fallingSandObstables3.png" style="float: left; width: 33%">
+<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandObstables1.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandObstables2.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandObstables3.png" style="float: left; width: 33%">
 <div style="text-align:center;"><font color="gray" size="2px">Falling sand on a few obstacles.</font></div>
 </div>
 
@@ -83,9 +83,9 @@ I will be talking more about updating the particle and the collisions below. The
 #### Collisions
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="/assets/2016-01-11-sand-particle-system-in-unity/explodingSand1.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="/assets/2016-01-11-sand-particle-system-in-unity/explodingSand2.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="/assets/2016-01-11-sand-particle-system-in-unity/explodingSand3.png" style="float: left; width: 33%">
+<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/explodingSand1.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/explodingSand2.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/explodingSand3.png" style="float: left; width: 33%">
 <div style="text-align:center;"><font color="gray" size="2px">Particles created in a small space "explode" because they are penetrating each other. The simulation runs until it reaches an equilibrium.</font></div>
 </div>
 
@@ -120,9 +120,9 @@ Funky, right? The only change in the scene is the timestep of the integration, e
 # Cheating: Dealing with Different Collisions
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="/assets/2016-01-11-sand-particle-system-in-unity/fallingSandBody1.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="/assets/2016-01-11-sand-particle-system-in-unity/fallingSandBody2.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="/assets/2016-01-11-sand-particle-system-in-unity/fallingSandBody3.png" style="float: left; width: 33%">
+<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandBody1.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandBody2.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandBody3.png" style="float: left; width: 33%">
 <div style="text-align:center;"><font color="gray" size="2px">Sand falling on a body.</font></div>
 </div>
 
@@ -131,7 +131,7 @@ So I talked before about how collisions between spheres is really easy to detect
 Well, dealing with planes is simple. For instance, you know where the floor is beforehand (let's say it's y = 0), so you can just check the collision between the center of mass of the spheres and that plane, which is trivial. But the collision of spheres and boxes (what looks like I'm doing with the human body) is a whole different thing. That's why what I did to simplify this step was "cheat" and actually create invisible spheres that are placed in the same positions as the boxes that make the body, as you can see on the picture below. That gives a good enough result without having to implement a whole different method of collision detection to deal with that.
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="/assets/2016-01-11-sand-particle-system-in-unity/realBody.png" style="width:40%;">
+<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/realBody.png" style="width:40%;">
 <div style="text-align:center;"><font color="gray" size="2px">This is what you are not seeing.</font></div>
 </div>
 
@@ -143,9 +143,9 @@ The results, I'd say, where really good. It's possible to see the expected motio
 
 If you are interested in learning more about all this stuff, here are the references I used.
 
-* [Unity][unity] - Unity's website
+* [Unity][unity] - Unity's website.
 * [Gaffer on Games][integration] - Good article to get a general idea of integration basics.
-* [The Ocean Spray in Your Face][ocean] - Great article about partycle systems.
+* [The Ocean Spray in Your Face][ocean] - Great article about particle systems.
 * Ivn Aldun, Angel Tena, and Miguel A. Otaduy, _Simulation of High-Resolution Granular Media_, CEIG09, San Sebastin, Sept. 9-11 (2009).
 * Nathan Bell, Yizhou Yu and Peter J. Mucha, _Particle-Based Simulation of Granular Materials_, Eurographics/ACM SIGGRAPH Symposium on Computer Animation (2005).
 
