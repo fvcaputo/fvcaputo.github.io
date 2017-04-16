@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Using Motion Capture to Animate Virtual Characters in a Physical Stage"
-subtitle: <div style="text-align:center;margin-top:-15px;padding-bottom:5px;"><img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-06-23-augmented-reality/pic11.png" style="width:49%;margin-right:0.5%"><img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-06-23-augmented-reality/pic22.png" style="width:49%"></div>This time let's play a bit with the Microsoft Kinect, Unity and use Vuforia to create an augmented reality application for mobile devices to create animations of virtual characters.
+subtitle: <div style="margin-top:-15px;padding-bottom:5px;"><img src="http://i.imgur.com/59plKev.png" style="width:49%;margin-right:0.5%"><img src="http://i.imgur.com/A3doLfK.png" style="width:49%"></div>This time let's play a bit with the Microsoft Kinect, Unity and use Vuforia to create an augmented reality application for mobile devices to create animations of virtual characters.
 date:   2016-06-23 12:00:00
 language: en
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-06-23-augmented-reality/pic11.png" style="float: left; width: 49%; margin-right: 0.5%">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-06-23-augmented-reality/pic22.png" style="float: left; width: 49%">
+<img src="http://i.imgur.com/59plKev.png" style="float: left; width: 49%; margin-right: 0.5%">
+<img src="http://i.imgur.com/A3doLfK.png" style="float: left; width: 49%">
 <div style="text-align:center;"><font color="gray" size="2px">Screenshots of the AR application showing the same model in different angles.</font></div>
 </div>
 
@@ -27,8 +27,8 @@ As mentioned before, I used a Micosoft Kinect v2 for this step. The Kinect is ab
 The Kinect data is not completely reliable, it can actually be quite noisy and it has quite a limited range to track the subject's movement. When it detects a person, it'll start tracking the joints of that person with different degrees of confidentece (not tracked, tracked and inferred), in a small field of view. In fact it will most likely completely lose track of the person if that person is sideways to the device. So obviously it's not the kind of thing you would use for a serious motion capture session, such as the one used in movies, but for my purposes it's quite enough.
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-06-23-augmented-reality/pic3.png" style="float: left; width: 49%; margin-right: 0.5%">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-06-23-augmented-reality/apic4.png" style="float: left; width: 49%">
+<img src="http://i.imgur.com/0thJbuC.png" style="float: left; width: 49%; margin-right: 0.5%">
+<img src="http://i.imgur.com/fXsC8so.png" style="float: left; width: 49%">
 <div style="text-align:center;"><font color="gray" size="2px">Result of the motion capture on the Unity application.</font></div>
 </div>
 
@@ -41,9 +41,9 @@ With the positions extracted from the motion capture I'm able to animate a simpl
 I'm not particularly good at modeling at all, so the models I created were really simple, just to give an idea of what is possible to do with that sort of data. We can create simple stick figures with lines connecting the joints, we can place blocks between the joints, and even use particle systems based on the joints position.
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-06-23-augmented-reality/character1.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-06-23-augmented-reality/character2.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-06-23-augmented-reality/character3.png" style="float: left; width: 33%">
+<img src="http://i.imgur.com/TIiAKyV.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="http://i.imgur.com/B3Qfz5I.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="http://i.imgur.com/ajn5gKx.png" style="float: left; width: 33%">
 <div style="text-align:center;"><font color="gray" size="2px">Three virtual character models created as examples.</font></div>
 </div>
 
@@ -55,7 +55,7 @@ Keyframing animation is a technique based on interpolation. It is based on defin
 
 This process is also used so that the animation becomes independent of the computer’s processing power, because each key frame is defined based on time. The idea is to define which key frame is redered at which specific time during the animation, so that any device running the process will show the same animation independently of how efficiently it can interpolate the data.
 
-To animate the character I have implemented both linear interpolation and TCB interpolation. The approach I took was to create a Keyframe class, called `KeyFrameAnimation`, which should be created for each joint of the virtual model. So you would have an instance of the class for the head joint alone, and one for each of the others. And in each keyframe class instance, you are going to add all the positions for each keyframe the joint will have (based on the motion capture joint data). 
+To animate the character I have implemented both linear interpolation and TCB interpolation. The approach I took was to create a Keyframe class, called `KeyFrameAnimation`, which should be created for each joint of the virtual model. So you would have an instance of the class for the head joint alone, and one for each of the others. And in each keyframe class instance, you are going to add all the positions for each keyframe the joint will have (based on the motion capture joint data).
 
 {% highlight csharp %}
 // For the key frame, each joint needs a key frame object
@@ -129,20 +129,20 @@ The animation of the virtual character is placed with respect to this target. Th
 <div style="text-align:center;margin-top:-5px;"><font color="gray" size="2px">Running the application on a Nexus 6P, displaying a recorded animation.</font></div>
 </div>
 
-The video above shows the application in action. It runs on any Android smartphone, with it you are able to change the virtual character model and move around to see the animation play in different angles. You can pause it at any time to just see how the pose looks aswell.
+The video above shows the application in action. It runs on any Android smartphone, with it you are able to change the virtual character model and move around to see the animation play in different angles. You can pause it at any time to just see how the pose looks as well.
 
 # Displaying the Character in VR
 
-Another application that I also endedup developing was a way to display this characer in a virtual reality experience for that I used the AR/VR glasses Epson Moverio BT-200. These glasses use Android as their OS, so it's possible to develop an Unity app for android and deploy it to the glasses.
+Another application that I also ended up developing was a way to display this character in a virtual reality experience for that I used the AR/VR glasses Epson Moverio BT-200. These glasses use Android as their OS, so it's possible to develop an Unity app for android and deploy it to the glasses.
 
-Of course this application is different from the previous one made for AR. Here I used Moverio's plugin for Unity, which includes APIs to access sensors and other components of the headset. 
+Of course this application is different from the previous one made for AR. Here I used Moverio's plugin for Unity, which includes APIs to access sensors and other components of the headset.
 
 In the scene I created there is a virtual stage and a starting position for the virtual character with respect to that stage. This is where the animation will be displayed, and the camera that will see this scene is replaced by the Moverio "camera". The camera is the object that is actually affected by the glasses, a script is attached to the object and it controls the orientation of the camera based on the gyroscope data from the glasses. This allows the user to see the scene in different angles depending on where he is physically looking.
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-06-23-augmented-reality/vr2.png" style="float: left; width: 49%; margin-right: 0.5%">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-06-23-augmented-reality/vr1.png" style="float: left; width: 49%">
-<div style="text-align:center;"><font color="gray" size="2px">Example showing how the orientation of the glasses affectd the scene the user is viewing. By physically looking up the scene is updated to show you a different angle.</font></div>
+<img src="http://i.imgur.com/MhXh0hB.png" style="float: left; width: 49%; margin-right: 0.5%">
+<img src="http://i.imgur.com/PTT669v.png" style="float: left; width: 49%">
+<div style="text-align:center;"><font color="gray" size="2px">Example showing how the orientation of the glasses affected the scene the user is viewing. By physically looking up the scene is updated to show you a different angle.</font></div>
 </div>
 
 # Results
@@ -157,7 +157,7 @@ Here are some good links you can used if you are interested in any of that stuff
 * [Microsoft Kinect][kinect] - Microsoft Kinect's website.
 * [Vuforia Developer Portal][vuforia] - Vuforia's website.
 * [Epson Moverio][moverio] - Moverio's website.
-* [The Principles of Animation][animation] - Great article about "The Principles of Animation" by Ralph A. De Stefano
+* [The Principles of Animation][animation] - Great article about "The Principles of Animation" by Ralph A. De Stefano.
 * [Pixar in a Box][animation2] - Khan Academy and Pixar's collaboration course to teach a number of computer graphics concepts.
 
 [unity]: https://unity3d.com/

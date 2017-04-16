@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  "Simulating Sand Using Particle Systems"
-subtitle: <div style="text-align:center;margin-top:-15px;padding-bottom:5px;"><img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandObstables1.png" style="width:33%;margin-right:0.5%"><img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandObstables2.png" style="width:33%;margin-right:0.5%"><img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandObstables3.png" style="width:33%;"></div>Particle systems are fun by itself and we can use it to simulate all sorts of different things, so I decided to use one to simulate sand. This time using Unity as a framework.
+subtitle: <div style="margin-top:-15px;padding-bottom:5px;"><img src="http://i.imgur.com/AmT2sGa.png" style="width:33%;margin-right:0.5%"><img src="http://i.imgur.com/Vs4j2Ci.png" style="width:33%;margin-right:0.5%"><img src="http://i.imgur.com/tGJ0BxB.png" style="width:33%;"></div>Particle systems are fun by itself and we can use it to simulate all sorts of different things, so I decided to use one to simulate sand. This time using Unity as a framework.
 date:   2016-01-11 12:00:00
 language: en
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandObstables1.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandObstables2.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandObstables3.png" style="float: left; width: 33%">
+<img src="http://i.imgur.com/AmT2sGa.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="http://i.imgur.com/Vs4j2Ci.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="http://i.imgur.com/tGJ0BxB.png" style="float: left; width: 33%">
 <div style="text-align:center;"><font color="gray" size="2px">Falling sand on a few obstacles.</font></div>
 </div>
 
@@ -28,9 +28,9 @@ Now let's go into more detail on the whole thing.
 
 As I mentioned before, instead of using the built-in tools Unity provides us with, I implemented pretty much everything myself. So the first thing on the list was a particle system.
 
-The particle system itself can be used as a mean to model different phenomena such as fire, water, smoke and in our case, granular materials. But regardless of what you are trying to simulate, if you are building it by using a particle system then it will pretty much be the same always. 
+The particle system itself can be used as a mean to model different phenomena such as fire, water, smoke and in our case, granular materials. But regardless of what you are trying to simulate, if you are building it by using a particle system then it will pretty much be the same always.
 
-I use a basic system where I have a particle emitter, update functions and, of course, the particles. 
+I use a basic system where I have a particle emitter, update functions and, of course, the particles.
 
 # The Particle Emitter
 
@@ -53,7 +53,7 @@ public class ParticleEmitter {
     public SandParticle[] particles;
     ...
     // Constructor
-    public ParticleEmitter(Vector3 newPos, Vector3 newPosVar, float newYaw, float newYawVar, float newPitch, float newPitchVar, 
+    public ParticleEmitter(Vector3 newPos, Vector3 newPosVar, float newYaw, float newYawVar, float newPitch, float newPitchVar,
         int newTotalParticles, float newEmissionRateSec, int newEmitsPerRate, float newLife) { ... }
     ...
     // Emit will return a particle list, which will be rendered
@@ -83,9 +83,9 @@ I will be talking more about updating the particle and the collisions below. The
 #### Collisions
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/explodingSand1.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/explodingSand2.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/explodingSand3.png" style="float: left; width: 33%">
+<img src="http://i.imgur.com/Zb0kmD9.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="http://i.imgur.com/fry6POz.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="http://i.imgur.com/8HcsfBm.png" style="float: left; width: 33%">
 <div style="text-align:center;"><font color="gray" size="2px">Particles created in a small space "explode" because they are penetrating each other. The simulation runs until it reaches an equilibrium.</font></div>
 </div>
 
@@ -96,7 +96,7 @@ Collision response is where the behavior of sand is actually implemented. When a
 $$
 \begin{equation*}
 \begin{split}
-F_{n} & = - (k_{n}\delta^{3/2} + \gamma_{n}\dot{\delta}\delta^{1/2}) n \\ 
+F_{n} & = - (k_{n}\delta^{3/2} + \gamma_{n}\dot{\delta}\delta^{1/2}) n \\
 F_{t} & = - min (\mu||F_{n}||,k_{s}||v_{t}||) \frac{v_{t}}{||v_{t}||}
 \end{split}
 \end{equation*}
@@ -106,7 +106,7 @@ Now, if you want to learn the specifics of those equations check the references 
 
 #### Updating Particles
 
-To update the simulation Runge-Kutta integration was used. It's not the only method that can be used in such a simulation, but it gives us good enough results given a small enough timestep. Like I mentioned before the system needs a way to update the values of every particle, which needs to be called every time a new frame is rendered. Runge-Kutta will need a value _dt_ to update the particles. And this value is very important because depending on it the error in the calculations might be too large and the movement will look completely wrong. 
+To update the simulation Runge-Kutta integration was used. It's not the only method that can be used in such a simulation, but it gives us good enough results given a small enough timestep. Like I mentioned before the system needs a way to update the values of every particle, which needs to be called every time a new frame is rendered. Runge-Kutta will need a value _dt_ to update the particles. And this value is very important because depending on it the error in the calculations might be too large and the movement will look completely wrong.
 
 You saw above some scenes with a time step of 3 ms. Now check how the first scene would look if you had instead 6 ms.
 
@@ -120,9 +120,9 @@ Funky, right? The only change in the scene is the timestep of the integration, e
 # Cheating: Dealing with Different Collisions
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandBody1.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandBody2.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/fallingSandBody3.png" style="float: left; width: 33%">
+<img src="http://i.imgur.com/OhJe9ZY.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="http://i.imgur.com/dVrnTD5.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="http://i.imgur.com/Nz4tTwb.png" style="float: left; width: 33%">
 <div style="text-align:center;"><font color="gray" size="2px">Sand falling on a body.</font></div>
 </div>
 
@@ -131,7 +131,7 @@ So I talked before about how collisions between spheres is really easy to detect
 Well, dealing with planes is simple. For instance, you know where the floor is beforehand (let's say it's y = 0), so you can just check the collision between the center of mass of the spheres and that plane, which is trivial. But the collision of spheres and boxes (what looks like I'm doing with the human body) is a whole different thing. That's why what I did to simplify this step was "cheat" and actually create invisible spheres that are placed in the same positions as the boxes that make the body, as you can see on the picture below. That gives a good enough result without having to implement a whole different method of collision detection to deal with that.
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="https://dl.dropboxusercontent.com/u/66530483/website/pics/posts/2016-01-11-sand-particle-system-in-unity/realBody.png" style="width:40%;">
+<img src="http://i.imgur.com/NrJ3qAm.png" style="width:40%;">
 <div style="text-align:center;"><font color="gray" size="2px">This is what you are not seeing.</font></div>
 </div>
 
