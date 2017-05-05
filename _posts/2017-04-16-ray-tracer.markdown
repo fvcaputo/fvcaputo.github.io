@@ -76,7 +76,7 @@ You can read more about this at [gcc's online manual][gcc]. There might be more 
 
 #### Results
 
-So here are a few results regarding rendering time. I made a relatively simple picture to test the different options, because if it was too complex the single threaded with no kd-tree would take a ridiculous amount of time, but still with some interesting geometry. What we have here is a 512x512 resolution picture with 8 rays per pixel, and no bouncing objects. It's a picture with a rectangle light (with 9 samples on a 3 by 3 grid), a floor and a wall, and the stanford bunny with the least amount of triangles (the "bun_zipper_res4.ply" file you can get on Stanford's website). It's essentially the same scene as the one I'm using on the header of this post, but with a less features.
+So here are a few results regarding rendering time. I made a relatively simple picture to test the different options, because if it was too complex the single threaded with no kd-tree would take a ridiculous amount of time, but still with some interesting geometry. What we have here is a 1024x1024 resolution picture with 8 rays per pixel, and no bouncing objects. It's a picture with a rectangle light (with 9 samples on a 3 by 3 grid), a floor and a wall, and the stanford bunny with the least amount of triangles (the "bun_zipper_res4.ply" file you can get on Stanford's website). It's essentially the same scene as the one I'm using on the header of this post, but with a less features.
 
 <div align="center">
 <a href="http://i.imgur.com/NF1XcP1.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/NF1XcP1.png" style="width:35%;" border="1"/></a>
