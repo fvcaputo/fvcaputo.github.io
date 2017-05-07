@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  "Creating Volumetric Lights and Shadows Through Ray Marching"
-subtitle: <div style="margin-top:-15px;"><img src="http://i.imgur.com/7a99qgm.png" style="width:32.5%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/fcwHYPB.png" style="width:32.5%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/mrKdmFQ.png" style="width:32.5%;margin-bottom:5px;" border="1">Now, taking advantage of the ray tracing engine I build some time ago, I decided to implement this little cool effect called volumetric lighting (or some times crepuscular rays, "god rays", etc).
+subtitle: <div style="margin-top:-15px;"><img src="http://i.imgur.com/7a99qgm.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/fcwHYPB.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/mrKdmFQ.png" style="width:32%;margin-bottom:5px;" border="1">Now, taking advantage of the ray tracing engine I build some time ago, I decided to implement this little cool effect called volumetric lighting (or some times crepuscular rays, "god rays", etc).
 date:   2017-05-02 08:51:00
 language: en
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
-<a href="http://i.imgur.com/7a99qgm.png" style="color: black;"><img src="http://i.imgur.com/7a99qgm.png" style="float: left; width: 32.5%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/fcwHYPB.png" style="color: black;"><img src="http://i.imgur.com/fcwHYPB.png" style="float: left; width: 32.5%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/mrKdmFQ.png" style="color: black;"><img src="http://i.imgur.com/mrKdmFQ.png" style="float: left; width: 32.5%" border="1"></a>
+<a href="http://i.imgur.com/7a99qgm.png" style="color: black;"><img src="http://i.imgur.com/7a99qgm.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="http://i.imgur.com/fcwHYPB.png" style="color: black;"><img src="http://i.imgur.com/fcwHYPB.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="http://i.imgur.com/mrKdmFQ.png" style="color: black;"><img src="http://i.imgur.com/mrKdmFQ.png" style="float: left; width: 32%" border="1"></a>
 <p><div style="text-align:center;"><font color="gray" size="2px"><p>Some pictures showing the volumetric lighting effect in action, an espace full of light, a directional spot light, and a far away light giving the aspect of a sun.</p></font></div></p>
 </div>
 

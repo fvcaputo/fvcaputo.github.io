@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  "Implementing a Ray Tracer"
-subtitle: <div style="margin-top:-15px;"><img src="http://i.imgur.com/QKPD53g.png" style="width:32.5%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/uGuqSOk.png" style="width:32.5%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/fKUDnof.png" style="width:32.5%;margin-bottom:5px;" border="1">The rite of passage for every computer graphics enthusiast? Well, there you go. Let's talk a bit about implementing a ray tracer (... from the ground up, yep, there you go).
+subtitle: <div style="margin-top:-15px;"><img src="http://i.imgur.com/QKPD53g.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/uGuqSOk.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/fKUDnof.png" style="width:32%;margin-bottom:5px;" border="1">The rite of passage for every computer graphics enthusiast? Well, there you go. Let's talk a bit about implementing a ray tracer (... from the ground up, yep, there you go).
 date:   2017-04-16 14:25:00
 language: en
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
-<a href="http://i.imgur.com/QKPD53g.png" style="color: black;"><img src="http://i.imgur.com/QKPD53g.png" style="float: left; width: 32.5%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/uGuqSOk.png" style="color: black;"><img src="http://i.imgur.com/uGuqSOk.png" style="float: left; width: 32.5%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/fKUDnof.png" style="color: black;"><img src="http://i.imgur.com/fKUDnof.png" style="float: left; width: 32.5%" border="1"></a>
+<a href="http://i.imgur.com/QKPD53g.png" style="color: black;"><img src="http://i.imgur.com/QKPD53g.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="http://i.imgur.com/uGuqSOk.png" style="color: black;"><img src="http://i.imgur.com/uGuqSOk.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="http://i.imgur.com/fKUDnof.png" style="color: black;"><img src="http://i.imgur.com/fKUDnof.png" style="float: left; width: 32%" border="1"></a>
 <p><div style="text-align:center;"><font color="gray" size="2px"><p>Here are few pictures rendered by my engine, some spheres with different illumination and reflection values, the recreation of the original picture rendered in Turner Whitted's ray tracing article, and the full Stanford Bunny (click on the pictures for full size).</p></font></div></p>
 </div>
 
