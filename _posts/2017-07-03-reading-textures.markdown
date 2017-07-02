@@ -10,7 +10,7 @@ language: en
 <a href="http://i.imgur.com/1FTkgjD.png" style="color: black;"><img src="http://i.imgur.com/1FTkgjD.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
 <a href="http://i.imgur.com/G7elrzr.png" style="color: black;"><img src="http://i.imgur.com/G7elrzr.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
 <a href="http://i.imgur.com/dBHTKr6.png" style="color: black;"><img src="http://i.imgur.com/dBHTKr6.png" style="float: left; width: 32%" border="1"></a>
-<p><div style="text-align:center;"><font color="gray" size="2px"><p>Some pictures showing the object loader: our good old teapot with flat normals, a textued cube, and a scan of room from Google Tango.</p></font></div></p>
+<p><div style="text-align:center;"><font color="gray" size="2px"><p>Some pictures showing the object loader: our good old teapot with flat normals, a textured cube, and a scan of room from Google Tango.</p></font></div></p>
 </div>
 
 It's been a while since I talked about my OpenGL framework on this blog (well, almost two years since the last time I talked about it really). But development on it never really ceased, it's the kind of thing that I keep working on even while I'm doing other stuff like the Ray Tracer engine. When I wrote this framework the last time I talked about creating triangle meshes for some primitives and lighting, now I'm going to talk about loading object files and textures.
