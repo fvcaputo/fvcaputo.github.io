@@ -32,10 +32,10 @@ Alright, the title for this section is just a joke but one that has meaning behi
 {% highlight c++ %}
 textureID = SOIL_load_OGL_texture
     (
-        filetexturepath,		
-        SOIL_LOAD_AUTO,		
-        SOIL_CREATE_NEW_ID,		
-        SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y		
+        filetexturepath,
+        SOIL_LOAD_AUTO,
+        SOIL_CREATE_NEW_ID,
+        SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y
     );
 {% endhighlight %}
 
@@ -106,7 +106,7 @@ And then after all of that you are done and can finally send the data to your sh
 
 That was my small, but full of lessons, journey through the world of image files. I hope this can help people who got stuck in this part of creating your own object loader. I strongly using a third party library to read the data, as it can have all sorts of different formats. Though I to believe a lower level one such as libpng is they way to go if you are interested in learning how this loading actually works, as you can see by this post when I was using SOIL which abstracted all this stuff I had no idea of what it was actually doing (and it was doing A LOT).
 
-Also, can stress this enough, use a very simple object to test your loader. Don't throw in a huge object with tons of geometry and complex texture patters, it will be a lot harder to understand what is going know. You can throw a complicated image (like the room image I used on the header of this post) to test it after you have got your small cube to work.
+Also, can stress this enough, use a very simple object to test your loader. Don't throw in a huge object with tons of geometry and complex texture patters, it will be a lot harder to understand what is going on. You can throw a complicated image (like the room image I used on the header of this post) to test it after you have got your small cube to work.
 
 # References
 
