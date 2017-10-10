@@ -10,12 +10,12 @@ A Ray Tracer engine written from the ground up in C++.
 
 #### Features
 
-- Space partitioning data structure (k-d tree)
-- CPU Multithreading
-- Texture Mapping support (both procedural and through image loading)
-- Model loading of .ply files
-- Area lighting
-- Volumetric Lighting through ray marching
+- Space partitioning data structure (k-d tree).
+- CPU Multithreading.
+- Texture Mapping support (both procedural and through image loading).
+- Model loading of .ply files.
+- Area lighting.
+- Volumetric Lighting through ray marching.
 
 #### Related Posts
 
@@ -40,23 +40,42 @@ The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/r
 
 --------------------------------------------------------------------------------
 <br>
+# Virtual Theatre
+
+This project is diveded intwo applications, one is an application built using Unity and Vuforia to display Motion Capture data in an Augmented Reality experience and the other also built in Unity uses Microsoft's plugin to capture motion data.
+
+#### Features
+
+- Uses Vuforia SDK to display AR graphics through target recognition.
+- Can be deployed to any android smartphone/tablet device.
+- Uses the Moverio SDK to be able to run on the Epson Moverio BT-200 glasses.
+- Animation through Keyframing and TCB interpolation.
+- The application for motion tracking uses Microsoft's Kinect plugin to track the data.
+
+#### Related Posts
+
+- [Using Motion Capture to Animate Virtual Characters in a Physical Stage]({% post_url 2016-06-23-augmented-reality %})
+
+#### Resources
+
+The code for this project is separated into two repositories, the one to build the AR application ([here](https://github.com/fvcaputo/virtualtheatre)) and the one for motion capturing ([here](https://github.com/fvcaputo/kinectbodytracking)).
+
+#### Notes
+
+I developed this project during grad school, it was something that was developed in conjuntction to another project called Farewell to Dawn that was accepeted and presented as a poster project at [SIGGRAPH '16](https://dl.acm.org/citation.cfm?id=2945127&CFID=817523326&CFTOKEN=26501141). A video of it can be seen on the ACM page under "Source Materials".
+<br>
+<div style="text-align:center;padding-bottom:10px;">
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Hmh5L7BBmJM" frameborder="0" allowfullscreen></iframe>
+</div>
+
+--------------------------------------------------------------------------------
+<br>
 # OpenGL Framework
 
 An OpenGL framework written from the ground up in C++ with a few helpful external libs.
 
 #### Features
 
-#### Related Posts
-
-#### Resources
-
---------------------------------------------------------------------------------
-<br>
-# Virtual Theatre
-
-An application built using Unity and Vuforia to display Motion Capture data in an Augmented Reality experience.
-
-#### Features
 
 #### Related Posts
 
