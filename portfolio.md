@@ -72,15 +72,32 @@ I developed this project during grad school, it was something that was developed
 <br>
 # OpenGL Framework
 
-An OpenGL framework written from the ground up in C++ with a few helpful external libs.
+An OpenGL framework written from the ground up in C++ with a few helpful external libs. :)
 
 #### Features
+
+- Custom vertex and fragment shader reader.
+- Custom model loading of Wavefront files.
+- Primitives creator with mesh subdivision control (cube, spheres, cylinders).
+- Phong Illumination lighting.
+- Light mapping support (diffuse mapping, specular mapping, normal mapping).
 
 
 #### Related Posts
 
+- [A C++ Framework For Interaction With OpenGL]({% post_url 2015-11-10-opengl-framework %})
+- [Some Thoughts on Loading Image Files for Textured Objects]({% post_url 2017-07-03-reading-textures %})
+
 #### Resources
 
+The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/openglframework).
+<br>
+<div align="center">
+<a href="http://i.imgur.com/1FTkgjD.png" style="color: black;"><img src="http://i.imgur.com/1FTkgjD.png" style="width: 32%; margin-right: 0.5%"></a>
+<a href="http://i.imgur.com/G7elrzr.png" style="color: black;"><img src="http://i.imgur.com/G7elrzr.png" style="width: 32%; margin-right: 0.5%"></a>
+<a href="http://i.imgur.com/dBHTKr6.png" style="color: black;"><img src="http://i.imgur.com/dBHTKr6.png" style="width: 32%"></a>
+</div>
+<br>
 --------------------------------------------------------------------------------
 <br>
 # Sand Particle Simulation
@@ -89,6 +106,19 @@ A simulation of the behaviout of sand particles built using in Unity as a framew
 
 #### Features
 
+- Custom Particle System (emitter, position update, etc).
+- Custom collision detection.
+- Colission behaviour modelled after sand behaviour.
+- Animation of models though Runge-Kutta integration.
+
 #### Related Posts
 
+- [Simulating Sand Using Particle Systems]({% post_url 2016-01-11-sand-particle-system-in-unity %})
+
 #### Resources
+
+The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/sandparticle).
+<br>
+<div style="text-align:center;padding-bottom:10px;">
+<iframe width="640" height="360" src="https://www.youtube.com/embed/auhUHaOxI8o" frameborder="0" allowfullscreen></iframe>
+</div>
