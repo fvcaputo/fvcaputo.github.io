@@ -81,12 +81,13 @@ An OpenGL framework written from the ground up in C++ with a few helpful externa
 - Primitives creator with mesh subdivision control (cube, spheres, cylinders).
 - Phong Illumination lighting.
 - Light mapping support (diffuse mapping, specular mapping, normal mapping).
-
+- Shadow mapping.
 
 #### Related Posts
 
 - [A C++ Framework For Interaction With OpenGL]({% post_url 2015-11-10-opengl-framework %})
 - [Some Thoughts on Loading Image Files for Textured Objects]({% post_url 2017-07-03-reading-textures %})
+- [Adding Lightmaps and Normal Mapping]({% post_url 2017-11-20-light-mapping %})
 
 #### Resources
 
