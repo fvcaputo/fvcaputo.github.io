@@ -5,6 +5,7 @@ subtitle: <div style="margin-top:-15px;"><img src="http://i.imgur.com/92hqDAV.pn
 date:   2017-11-20 11:23:00
 language: en
 image: http://i.imgur.com/mAUNY3h.png
+description: Some thoughts about dealing with lightmaps in OpenGL.
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
