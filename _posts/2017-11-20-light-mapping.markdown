@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Adding Lightmaps and Normal Mapping"
+title:  "Lightmaps and Normal Mapping"
 subtitle: <div style="margin-top:-15px;"><img src="http://i.imgur.com/92hqDAV.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/p8ZcGGO.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/mAUNY3h.png" style="width:32%;margin-bottom:5px;" border="1">With reliable texture loading added previously, now I further improved the engine to support light and normal mapping.
 date:   2017-11-20 11:23:00
 language: en
+image: http://i.imgur.com/mAUNY3h.png
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
