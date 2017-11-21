@@ -1,17 +1,17 @@
 ---
 layout: post
 title:  "Lightmaps and Normal Mapping"
-subtitle: <div style="margin-top:-15px;"><img src="http://i.imgur.com/92hqDAV.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/p8ZcGGO.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/mAUNY3h.png" style="width:32%;margin-bottom:5px;" border="1">With reliable texture loading added previously, now I further improved the engine to support light and normal mapping.
+subtitle: <div style="margin-top:-15px;"><img src="http://i.imgur.com/92hqDAV.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/p8ZcGGO.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/mAUNY3h.jpg" style="width:32%;margin-bottom:5px;" border="1">With reliable texture loading added previously, now I further improved the engine to support light and normal mapping.
 date:   2017-11-20 11:23:00
 language: en
-image: http://i.imgur.com/mAUNY3h.png
+image: http://i.imgur.com/mAUNY3h.jpg
 description: Some thoughts about dealing with lightmaps in OpenGL.
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
-<a href="http://i.imgur.com/92hqDAV.png" style="color: black;"><img src="http://i.imgur.com/92hqDAV.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/p8ZcGGO.png" style="color: black;"><img src="http://i.imgur.com/p8ZcGGO.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/mAUNY3h.png" style="color: black;"><img src="http://i.imgur.com/mAUNY3h.png" style="float: left; width: 32%" border="1"></a>
+<a href="http://i.imgur.com/92hqDAV.jpg" style="color: black;"><img src="http://i.imgur.com/92hqDAV.jpg" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="http://i.imgur.com/p8ZcGGO.jpg" style="color: black;"><img src="http://i.imgur.com/p8ZcGGO.jpg" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="http://i.imgur.com/mAUNY3h.jpg" style="color: black;"><img src="http://i.imgur.com/mAUNY3h.jpg" style="float: left; width: 32%" border="1"></a>
 <p><div style="text-align:center;"><font color="gray" size="2px"><p>From left to right, a textured plane without lightmaps, with lightmaps, and with lightmaps and normal map.</p></font></div></p>
 </div>
 
@@ -71,8 +71,8 @@ void main () {
 So, a few changes there. First, I changed some parts of the shader to use structs so that we would have wrappers for the relevant information. This was not really necessary, but it just made things much clearer. Then, after loading the textures and sending them to the shader, together with the texture coordinates, simply use the new values in the phong illumination to get the final result.
 
 <div align="center">
-<a href="http://i.imgur.com/92hqDAV.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/92hqDAV.png" style="width:35%;" border="1"/></a>
-<a href="http://i.imgur.com/p8ZcGGO.png" style="color:black;"><img src="http://i.imgur.com/p8ZcGGO.png" style="width:35%;" border="1"></a>
+<a href="http://i.imgur.com/92hqDAV.jpg" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/92hqDAV.jpg" style="width:35%;" border="1"/></a>
+<a href="http://i.imgur.com/p8ZcGGO.jpg" style="color:black;"><img src="http://i.imgur.com/p8ZcGGO.jpg" style="width:35%;" border="1"></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>Results, on the left no light effect, on the right using lightmaps we see how the object is supposed to react to the light.</p></font></div>
 </div>
 
@@ -155,8 +155,8 @@ void main () {
 Then, for the following calculations of the phong illumination, instead of using the surface normal we use this new normal. The end result is a much more realistic object, with a "bumpy" look, without actually changing the geometry to add those bumps.
 
 <div align="center">
-<a href="http://i.imgur.com/p8ZcGGO.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/p8ZcGGO.png" style="width:35%;" border="1"/></a>
-<a href="http://i.imgur.com/mAUNY3h.png" style="color:black;"><img src="http://i.imgur.com/mAUNY3h.png" style="width:35%;" border="1"></a>
+<a href="http://i.imgur.com/p8ZcGGO.jpg" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/p8ZcGGO.jpg" style="width:35%;" border="1"/></a>
+<a href="http://i.imgur.com/mAUNY3h.jpg" style="color:black;"><img src="http://i.imgur.com/mAUNY3h.jpg" style="width:35%;" border="1"></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>On the left the wall only with the diffuse and specular textures, on the right the wall using the normal map.</p></font></div>
 </div>
 
