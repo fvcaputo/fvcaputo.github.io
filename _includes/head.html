@@ -26,6 +26,7 @@
 
   {% if page.image %}
     <meta property="og:image" content="{{ page.image }}">
+    <meta property="og:image:url" content="{{ page.image }}">
   {% else %}
     <meta property="og:image" content="/assets/title.png">
   {% endif %}
@@ -35,6 +36,8 @@
   {% else %}
     <meta property="og:description" content="A website for discussions on personal projects and whatnot, mostly about computer graphics.">
   {% endif %}
+
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
  <!-- twitter tags -->
  <meta name="twitter:title" content="Felipe Caputo Blog">
