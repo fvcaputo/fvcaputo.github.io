@@ -88,6 +88,7 @@ An OpenGL framework written from the ground up in C++ with a few helpful externa
 - [A C++ Framework For Interaction With OpenGL]({% post_url 2015-11-10-opengl-framework %})
 - [Some Thoughts on Loading Image Files for Textured Objects]({% post_url 2017-07-03-reading-textures %})
 - [Lightmaps and Normal Mapping]({% post_url 2017-11-20-light-mapping %})
+- [Framebuffers and Shadow Mapping]({% post_url 2017-12-10-shadow-mapping %})
 
 #### Resources
 
@@ -97,6 +98,11 @@ The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/o
 <a href="http://i.imgur.com/1FTkgjD.png" style="color: black;"><img src="http://i.imgur.com/1FTkgjD.png" style="width: 32%; margin-right: 0.5%"></a>
 <a href="http://i.imgur.com/G7elrzr.png" style="color: black;"><img src="http://i.imgur.com/G7elrzr.png" style="width: 32%; margin-right: 0.5%"></a>
 <a href="http://i.imgur.com/dBHTKr6.png" style="color: black;"><img src="http://i.imgur.com/dBHTKr6.png" style="width: 32%"></a>
+</div>
+<div align="center" style="padding-top:10px">
+<a href="http://i.imgur.com/mAUNY3h.png" style="color: black;"><img src="http://i.imgur.com/mAUNY3h.png" style="width: 32%; margin-right: 0.5%"></a>
+<a href="http://i.imgur.com/vgbukjA.png" style="color: black;"><img src="http://i.imgur.com/vgbukjA.png" style="width: 32%; margin-right: 0.5%"></a>
+<a href="http://i.imgur.com/glXogdt.png" style="color: black;"><img src="http://i.imgur.com/glXogdt.png" style="width: 32%"></a>
 </div>
 <br>
 --------------------------------------------------------------------------------

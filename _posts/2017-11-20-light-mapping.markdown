@@ -166,6 +166,6 @@ Adding support to lightmaps makes it so that textured objects look a lot more re
 
 # References
 
-* [Learn OpenGl](https://learnopengl.com/#!Advanced-Lighting/Normal-Mapping) - Normal mapping tutorial.
+* [Learn OpenGL](https://learnopengl.com/#!Advanced-Lighting/Normal-Mapping) - Normal mapping tutorial.
 * [Opengl-Tutorial](http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-13-normal-mapping/) - Tutorial 13 : Normal Mapping.
 * [CrazyBump](https://www.crazybump.com/) - Helpful tool to create/edit normal maps.
