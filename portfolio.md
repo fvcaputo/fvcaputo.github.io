@@ -82,6 +82,7 @@ An OpenGL framework written from the ground up in C++ with a few helpful externa
 - Phong Illumination lighting.
 - Light mapping support (diffuse mapping, specular mapping, normal mapping).
 - Shadow mapping.
+- Deferred shading.
 
 #### Related Posts
 
@@ -95,8 +96,8 @@ An OpenGL framework written from the ground up in C++ with a few helpful externa
 The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/openglframework).
 <br>
 <div align="center">
-<a href="http://i.imgur.com/1FTkgjD.png" style="color: black;"><img src="http://i.imgur.com/1FTkgjD.png" style="width: 32%; margin-right: 0.5%"></a>
-<a href="http://i.imgur.com/G7elrzr.png" style="color: black;"><img src="http://i.imgur.com/G7elrzr.png" style="width: 32%; margin-right: 0.5%"></a>
+<a href="http://i.imgur.com/pl75fSJ.jpg" style="color: black;"><img src="http://i.imgur.com/pl75fSJ.jpg" style="width: 32%; margin-right: 0.5%"></a>
+<a href="http://i.imgur.com/bPmCEMM.jpg" style="color: black;"><img src="http://i.imgur.com/bPmCEMM.png" style="width: 32%; margin-right: 0.5%"></a>
 <a href="http://i.imgur.com/dBHTKr6.png" style="color: black;"><img src="http://i.imgur.com/dBHTKr6.png" style="width: 32%"></a>
 </div>
 <div align="center" style="padding-top:10px">
