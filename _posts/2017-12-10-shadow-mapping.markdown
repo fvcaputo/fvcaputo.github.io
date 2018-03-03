@@ -101,5 +101,5 @@ All of this requires some setting up, but in the end you are really just compari
 
 # References
 
-* [Learn OpenGl](https://learnopengl.com/#!Advanced-Lighting/Shadows/Shadow-Mapping) - Shadow mapping tutorial.
+* [Learn OpenGL](https://learnopengl.com/#!Advanced-Lighting/Shadows/Shadow-Mapping) - Shadow mapping tutorial.
 * [OpenGL Archive](https://www.opengl.org/archives/resources/faq/technical/depthbuffer.htm) - OpenGL Archived Depth Buffer FAQ.
