@@ -90,6 +90,7 @@ An OpenGL framework written from the ground up in C++ with a few helpful externa
 - [Some Thoughts on Loading Image Files for Textured Objects]({% post_url 2017-07-03-reading-textures %})
 - [Lightmaps and Normal Mapping]({% post_url 2017-11-20-light-mapping %})
 - [Framebuffers and Shadow Mapping]({% post_url 2017-12-10-shadow-mapping %})
+- [We've Got Deferred Shading]({% post_url 2018-03-04-deferred-shading %})
 
 #### Resources
 
