@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Using Motion Capture to Animate Virtual Characters in a Physical Stage"
-subtitle: <div style="margin-top:-15px;padding-bottom:5px;"><img src="http://i.imgur.com/59plKev.png" style="width:49%;margin-right:0.5%"><img src="http://i.imgur.com/A3doLfK.png" style="width:49%"></div>This time let's play a bit with the Microsoft Kinect, Unity and use Vuforia to create an augmented reality application for mobile devices to create animations of virtual characters.
+subtitle: <div style="margin-top:-15px;padding-bottom:5px;"><img src="https://i.imgur.com/59plKev.png" style="width:49%;margin-right:0.5%"><img src="https://i.imgur.com/A3doLfK.png" style="width:49%"></div>This time let's play a bit with the Microsoft Kinect, Unity and use Vuforia to create an augmented reality application for mobile devices to create animations of virtual characters.
 date:   2016-06-23 12:00:00
 language: en
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="http://i.imgur.com/59plKev.png" style="float: left; width: 49%; margin-right: 0.5%">
-<img src="http://i.imgur.com/A3doLfK.png" style="float: left; width: 49%">
+<img src="https://i.imgur.com/59plKev.png" style="float: left; width: 49%; margin-right: 0.5%">
+<img src="https://i.imgur.com/A3doLfK.png" style="float: left; width: 49%">
 <div style="text-align:center;"><font color="gray" size="2px">Screenshots of the AR application showing the same model in different angles.</font></div>
 </div>
 
@@ -27,8 +27,8 @@ As mentioned before, I used a Micosoft Kinect v2 for this step. The Kinect is ab
 The Kinect data is not completely reliable, it can actually be quite noisy and it has quite a limited range to track the subject's movement. When it detects a person, it'll start tracking the joints of that person with different degrees of confidentece (not tracked, tracked and inferred), in a small field of view. In fact it will most likely completely lose track of the person if that person is sideways to the device. So obviously it's not the kind of thing you would use for a serious motion capture session, such as the one used in movies, but for my purposes it's quite enough.
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="http://i.imgur.com/0thJbuC.png" style="float: left; width: 49%; margin-right: 0.5%">
-<img src="http://i.imgur.com/fXsC8so.png" style="float: left; width: 49%">
+<img src="https://i.imgur.com/0thJbuC.png" style="float: left; width: 49%; margin-right: 0.5%">
+<img src="https://i.imgur.com/fXsC8so.png" style="float: left; width: 49%">
 <div style="text-align:center;"><font color="gray" size="2px">Result of the motion capture on the Unity application.</font></div>
 </div>
 
@@ -41,9 +41,9 @@ With the positions extracted from the motion capture I'm able to animate a simpl
 I'm not particularly good at modeling at all, so the models I created were really simple, just to give an idea of what is possible to do with that sort of data. We can create simple stick figures with lines connecting the joints, we can place blocks between the joints, and even use particle systems based on the joints position.
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="http://i.imgur.com/TIiAKyV.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="http://i.imgur.com/B3Qfz5I.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="http://i.imgur.com/ajn5gKx.png" style="float: left; width: 33%">
+<img src="https://i.imgur.com/TIiAKyV.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://i.imgur.com/B3Qfz5I.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://i.imgur.com/ajn5gKx.png" style="float: left; width: 33%">
 <div style="text-align:center;"><font color="gray" size="2px">Three virtual character models created as examples.</font></div>
 </div>
 
@@ -140,8 +140,8 @@ Of course this application is different from the previous one made for AR. Here 
 In the scene I created there is a virtual stage and a starting position for the virtual character with respect to that stage. This is where the animation will be displayed, and the camera that will see this scene is replaced by the Moverio "camera". The camera is the object that is actually affected by the glasses, a script is attached to the object and it controls the orientation of the camera based on the gyroscope data from the glasses. This allows the user to see the scene in different angles depending on where he is physically looking.
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="http://i.imgur.com/MhXh0hB.png" style="float: left; width: 49%; margin-right: 0.5%">
-<img src="http://i.imgur.com/PTT669v.png" style="float: left; width: 49%">
+<img src="https://i.imgur.com/MhXh0hB.png" style="float: left; width: 49%; margin-right: 0.5%">
+<img src="https://i.imgur.com/PTT669v.png" style="float: left; width: 49%">
 <div style="text-align:center;"><font color="gray" size="2px">Example showing how the orientation of the glasses affected the scene the user is viewing. By physically looking up the scene is updated to show you a different angle.</font></div>
 </div>
 

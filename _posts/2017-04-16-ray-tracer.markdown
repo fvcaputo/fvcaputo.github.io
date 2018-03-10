@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  "Implementing a Ray Tracer"
-subtitle: <div style="margin-top:-15px;"><img src="http://i.imgur.com/QKPD53g.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/uGuqSOk.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/fKUDnof.png" style="width:32%;margin-bottom:5px;" border="1">The rite of passage for every computer graphics enthusiast? Well, there you go. Let's talk a bit about implementing a ray tracer (... from the ground up, yep, there you go).
+subtitle: <div style="margin-top:-15px;"><img src="https://i.imgur.com/QKPD53g.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/uGuqSOk.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/fKUDnof.png" style="width:32%;margin-bottom:5px;" border="1">The rite of passage for every computer graphics enthusiast? Well, there you go. Let's talk a bit about implementing a ray tracer (... from the ground up, yep, there you go).
 date:   2017-04-16 14:25:00
 language: en
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
-<a href="http://i.imgur.com/QKPD53g.png" style="color: black;"><img src="http://i.imgur.com/QKPD53g.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/uGuqSOk.png" style="color: black;"><img src="http://i.imgur.com/uGuqSOk.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/fKUDnof.png" style="color: black;"><img src="http://i.imgur.com/fKUDnof.png" style="float: left; width: 32%" border="1"></a>
+<a href="https://i.imgur.com/QKPD53g.png" style="color: black;"><img src="https://i.imgur.com/QKPD53g.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="https://i.imgur.com/uGuqSOk.png" style="color: black;"><img src="https://i.imgur.com/uGuqSOk.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="https://i.imgur.com/fKUDnof.png" style="color: black;"><img src="https://i.imgur.com/fKUDnof.png" style="float: left; width: 32%" border="1"></a>
 <p><div style="text-align:center;"><font color="gray" size="2px"><p>Here are few pictures rendered by my engine, some spheres with different illumination and reflection values, the recreation of the original picture rendered in Turner Whitted's ray tracing article, and the full Stanford Bunny (click on the pictures for full size).</p></font></div></p>
 </div>
 
@@ -79,8 +79,8 @@ You can read more about this at [gcc's online manual][gcc]. There might be more 
 So here are a few results regarding rendering time. I made a relatively simple picture to test the different options, because if it was too complex the single threaded with no kd-tree would take a ridiculous amount of time, but still with some interesting geometry. What we have here is a 1024x1024 resolution picture with 8 rays per pixel, and no bouncing objects. It's a picture with a rectangle light (with 9 samples on a 3 by 3 grid), a floor and a wall, and the stanford bunny with the least amount of triangles (the "bun_zipper_res4.ply" file you can get on Stanford's website). It's essentially the same scene as the one I'm using on the header of this post, but with a less features.
 
 <div align="center">
-<a href="http://i.imgur.com/NF1XcP1.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/NF1XcP1.png" style="width:35%;" border="1"/></a>
-<a href="http://i.imgur.com/fKUDnof.png" style="color:black;"><img src="http://i.imgur.com/fKUDnof.png" style="width:35%" border="1"></a>
+<a href="https://i.imgur.com/NF1XcP1.png" style="color:black;margin-right:0.5%"><img src="https://i.imgur.com/NF1XcP1.png" style="width:35%;" border="1"/></a>
+<a href="https://i.imgur.com/fKUDnof.png" style="color:black;"><img src="https://i.imgur.com/fKUDnof.png" style="width:35%" border="1"></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>On the left we have the scene used for the time results on the table below. It's slightly different from the right scene, which has the complete stanford bunny, more rays per pixel, more sampling on the light, etc.</p></font></div>
 </div>
 
@@ -104,8 +104,8 @@ Well, obviously with a ray tracer the whole thing is global illumination, BRDFs 
 With the architecture of my engine, it was relatively easy to create area lights. The idea is to make a light "object", that has an actual object (like a rectangle and a sphere) attached to it. Then, differently from a point light, when a shadow ray is cast and tries to reach the light it will need to try to reach a number of points sampled from the area light.
 
 <div align="center">
-<a href="http://i.imgur.com/XEHANxF.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/XEHANxF.png" style="width:35%;" border="1"/></a>
-<a href="http://i.imgur.com/QKPD53g.png" style="color:black;"><img src="http://i.imgur.com/QKPD53g.png" style="width:35%" border="1"></a>
+<a href="https://i.imgur.com/XEHANxF.png" style="color:black;margin-right:0.5%"><img src="https://i.imgur.com/XEHANxF.png" style="width:35%;" border="1"/></a>
+<a href="https://i.imgur.com/QKPD53g.png" style="color:black;"><img src="https://i.imgur.com/QKPD53g.png" style="width:35%" border="1"></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>On the left we have a scene with a simple point light, on the right a rectangle area light.</p></font></div>
 </div>
 
@@ -116,8 +116,8 @@ This creates a much more realistic scene because of how the light affects the ob
 And to be able to create more interesting scenes it's also possible to add texture mapping in our objects. Texture mapping given a texture picture is done the normal route, create U and V coordinates for texture and then map it on the surface. The more interesting kind of texture you can also do in this engine is procedural textures. That's the checkered floor you can see in the original ray tracer paper. It can range from really complicated to pretty easy. There is support to add any number of different textures on the engine, but I focused on recreating the texture floor, and to adding textures to spherical objects, as you can see below.
 
 <div align="center">
-<a href="http://i.imgur.com/uGuqSOk.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/uGuqSOk.png" style="width:35%;" border="1"/></a>
-<a href="http://i.imgur.com/RjSN5Gr.png" style="color:black;"><img src="http://i.imgur.com/RjSN5Gr.png" style="width:35%" border="1"></a>
+<a href="https://i.imgur.com/uGuqSOk.png" style="color:black;margin-right:0.5%"><img src="https://i.imgur.com/uGuqSOk.png" style="width:35%;" border="1"/></a>
+<a href="https://i.imgur.com/RjSN5Gr.png" style="color:black;"><img src="https://i.imgur.com/RjSN5Gr.png" style="width:35%" border="1"></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>On the left we have the classic whitted ray tracer scene with a procedural checkered texture on the floor, and on the right we have spherical texture mapping on some spheres.</p></font></div>
 </div>
 
@@ -126,8 +126,8 @@ And to be able to create more interesting scenes it's also possible to add textu
 In the end I was able to implement a really robust engine that enables me to create a lot of different scenes with different characteristics. The only "issue" is that a Whitted Ray Tracer is mostly interested in the effects of direct lights. Which means, when you render a scene shooting rays from the camera and trying to hit the light, you actually miss some of the the contribution light can have to the overall scene. This can be easily seen in scenes where light is shining though some sort of hole in a room, for instance the famous Cornell Box seen below.
 
 <div align="center">
-<a href="http://i.imgur.com/7UotCPa.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/7UotCPa.png" style="width:35%;" border="1"/></a>
-<a href="http://i.imgur.com/L0QHkB4.jpg" style="color:black;"><img src="http://i.imgur.com/L0QHkB4.png" style="width:35%" border="1"></a>
+<a href="https://i.imgur.com/7UotCPa.png" style="color:black;margin-right:0.5%"><img src="https://i.imgur.com/7UotCPa.png" style="width:35%;" border="1"/></a>
+<a href="https://i.imgur.com/L0QHkB4.jpg" style="color:black;"><img src="https://i.imgur.com/L0QHkB4.png" style="width:35%" border="1"></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>Left: the cornell box rendered by my raytracer. Right: a picture of the original cornell box.</p></font></div>
 </div>
 

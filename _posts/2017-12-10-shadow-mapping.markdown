@@ -1,17 +1,17 @@
 ---
 layout: post
 title:  "Framebuffers and Shadow Mapping"
-subtitle: <div style="margin-top:-15px;"><img src="http://i.imgur.com/77EkHMj.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/vgbukjA.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/glXogdt.jpg" style="width:32%;margin-bottom:5px;" border="1">Time to add shadow mapping to the engine, a feature that requires a better understanding of OpenGL's framebuffers.
+subtitle: <div style="margin-top:-15px;"><img src="https://i.imgur.com/77EkHMj.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/vgbukjA.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/glXogdt.jpg" style="width:32%;margin-bottom:5px;" border="1">Time to add shadow mapping to the engine, a feature that requires a better understanding of OpenGL's framebuffers.
 date:   2017-12-10 10:33:00
 language: en
-image: http://i.imgur.com/glXogdt.jpg
+image: https://i.imgur.com/glXogdt.jpg
 description: Implementing shadow mapping using framebuffers.
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
-<a href="http://i.imgur.com/77EkHMj.jpg" style="color: black;"><img src="http://i.imgur.com/77EkHMj.jpg" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/vgbukjA.jpg" style="color: black;"><img src="http://i.imgur.com/vgbukjA.jpg" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/glXogdt.jpg" style="color: black;"><img src="http://i.imgur.com/glXogdt.jpg" style="float: left; width: 32%" border="1"></a>
+<a href="https://i.imgur.com/77EkHMj.jpg" style="color: black;"><img src="https://i.imgur.com/77EkHMj.jpg" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="https://i.imgur.com/vgbukjA.jpg" style="color: black;"><img src="https://i.imgur.com/vgbukjA.jpg" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="https://i.imgur.com/glXogdt.jpg" style="color: black;"><img src="https://i.imgur.com/glXogdt.jpg" style="float: left; width: 32%" border="1"></a>
 <p><div style="text-align:center;"><font color="gray" size="2px"><p>From left to right, scene with no shadows, depth map of the scene, scene using the depth map to calculate shadows.</p></font></div></p>
 </div>
 
@@ -28,7 +28,7 @@ To create a shadow map though, what we want is not exactly to use this depth map
 ### Enter: The Framebuffer
 
 <div align="center">
-<a href="http://i.imgur.com/vgbukjA.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/vgbukjA.png" style="width:35%;" border="1"/></a>
+<a href="https://i.imgur.com/vgbukjA.png" style="color:black;margin-right:0.5%"><img src="https://i.imgur.com/vgbukjA.png" style="width:35%;" border="1"/></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>The depth map.</p></font></div>
 </div>
 

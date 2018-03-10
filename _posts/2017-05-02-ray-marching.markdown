@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  "Creating Volumetric Lights and Shadows Through Ray Marching"
-subtitle: <div style="margin-top:-15px;"><img src="http://i.imgur.com/7a99qgm.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/fcwHYPB.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/mrKdmFQ.png" style="width:32%;margin-bottom:5px;" border="1">Now, taking advantage of the ray tracing engine I build some time ago, I decided to implement this little cool effect called volumetric lighting (or some times crepuscular rays, "god rays", etc).
+subtitle: <div style="margin-top:-15px;"><img src="https://i.imgur.com/7a99qgm.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/fcwHYPB.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/mrKdmFQ.png" style="width:32%;margin-bottom:5px;" border="1">Now, taking advantage of the ray tracing engine I build some time ago, I decided to implement this little cool effect called volumetric lighting (or some times crepuscular rays, "god rays", etc).
 date:   2017-05-02 08:51:00
 language: en
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
-<a href="http://i.imgur.com/7a99qgm.png" style="color: black;"><img src="http://i.imgur.com/7a99qgm.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/fcwHYPB.png" style="color: black;"><img src="http://i.imgur.com/fcwHYPB.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/mrKdmFQ.png" style="color: black;"><img src="http://i.imgur.com/mrKdmFQ.png" style="float: left; width: 32%" border="1"></a>
+<a href="https://i.imgur.com/7a99qgm.png" style="color: black;"><img src="https://i.imgur.com/7a99qgm.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="https://i.imgur.com/fcwHYPB.png" style="color: black;"><img src="https://i.imgur.com/fcwHYPB.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="https://i.imgur.com/mrKdmFQ.png" style="color: black;"><img src="https://i.imgur.com/mrKdmFQ.png" style="float: left; width: 32%" border="1"></a>
 <p><div style="text-align:center;"><font color="gray" size="2px"><p>Some pictures showing the volumetric lighting effect in action, an espace full of light, a directional spot light, and a far away light giving the aspect of a sun.</p></font></div></p>
 </div>
 
@@ -24,7 +24,7 @@ However, that's not wrong, that's actually 100% correct. The thing is, these sce
 My idea then was to essentially "add" ray marching to my ray tracer engine, and actually use both techniques at the same time. The process begins by first using the Ray Tracing technique to check for intersections between the ray and the objects in the scene. If the ray does intersect with objects, the closest intersection point is saved, otherwise this process won't affect the ray sampling.
 
 <div align="center">
-<img src="http://i.imgur.com/alsqNCz.png" style="width:70%;" border="1"/>
+<img src="https://i.imgur.com/alsqNCz.png" style="width:70%;" border="1"/>
 <div style="text-align:center;"><font color="gray" size="2px"><p>Diagram describing the Ray Marching process.</p></font></div>
 </div>
 
@@ -72,7 +72,7 @@ I'll leave the explanation of what all exactly all of those equations are doing 
 Now, suffices to say that with all those variables in place, and with our samples points in the scene, we are able to simulate this columetric light and shadow effect. The algorithm we end up with is not really that complicated:
 
 <div align="center" style="padding-bottom:10px;">
-<img src="http://i.imgur.com/tg0mqUt.png" style="width:80%;"/>
+<img src="https://i.imgur.com/tg0mqUt.png" style="width:80%;"/>
 </div>
 
 # Show Me the Cool Pictures Already !!
@@ -108,8 +108,8 @@ Then when the world is rendered it will check if participant media was added, if
 #### Constant vs Variable Density
 
 <div align="center">
-<a href="http://i.imgur.com/cUgLoqP.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/cUgLoqP.png" style="width:35%;" border="1"/></a>
-<a href="http://i.imgur.com/EsB8Jty.png" style="color:black;"><img src="http://i.imgur.com/EsB8Jty.png" style="width:35%" border="1"></a>
+<a href="https://i.imgur.com/cUgLoqP.png" style="color:black;margin-right:0.5%"><img src="https://i.imgur.com/cUgLoqP.png" style="width:35%;" border="1"/></a>
+<a href="https://i.imgur.com/EsB8Jty.png" style="color:black;"><img src="https://i.imgur.com/EsB8Jty.png" style="width:35%" border="1"></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>Left: Variable density. Right: Constant density.</p></font></div>
 </div>
 
@@ -120,14 +120,14 @@ Here we see the result of running the algorithm for both a constant and variable
 Now, let's check out some pictures with actual objects to see the effect of volumetric shadow and the importance of the number of samples.
 
 <div align="center">
-<a href="http://i.imgur.com/1pCwEdu.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/1pCwEdu.png" style="width:35%;" border="1"/></a>
-<a href="http://i.imgur.com/MZcrHyj.png" style="color:black;"><img src="http://i.imgur.com/MZcrHyj.png" style="width:35%;" border="1"></a>
+<a href="https://i.imgur.com/1pCwEdu.png" style="color:black;margin-right:0.5%"><img src="https://i.imgur.com/1pCwEdu.png" style="width:35%;" border="1"/></a>
+<a href="https://i.imgur.com/MZcrHyj.png" style="color:black;"><img src="https://i.imgur.com/MZcrHyj.png" style="width:35%;" border="1"></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>Left: Constant atmosphere, 50 samples. Right: Variable atmosphere, 300 samples.</p></font></div>
 </div>
 
 <div align="center">
-<a href="http://i.imgur.com/CPH5JX8.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/CPH5JX8.png" style="width:35%;" border="1"/></a>
-<a href="http://i.imgur.com/7a99qgm.png" style="color:black;"><img src="http://i.imgur.com/7a99qgm.png" style="width:35%" border="1"></a>
+<a href="https://i.imgur.com/CPH5JX8.png" style="color:black;margin-right:0.5%"><img src="https://i.imgur.com/CPH5JX8.png" style="width:35%;" border="1"/></a>
+<a href="https://i.imgur.com/7a99qgm.png" style="color:black;"><img src="https://i.imgur.com/7a99qgm.png" style="width:35%" border="1"></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>Left: Variable atmosphere, 50 samples. Right: Variable atmosphere, 300 samples.</p></font></div>
 </div>
 
@@ -140,8 +140,8 @@ The pictures on the right show how the scene looks like with a relatively small 
 Alright, with everything in place we caw now just play around with these settings to create some cool scenes. One of the things I decided to do from the start was to create a spot light, to have this cone of light shining down on some objects. This is not really that much complicated, given that you have a good design in your engine, because all you need beside the point of the light is a normal (the direction of the spotlight) and an angle (describes the volume of the cone). Then you just need to check if a shadow ray is "inside" the cone and then see if it hits the source.
 
 <div align="center">
-<a href="http://i.imgur.com/fcwHYPB.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/fcwHYPB.png" style="width:35%;" border="1"/></a>
-<a href="http://i.imgur.com/mrKdmFQ.png" style="color:black;"><img src="http://i.imgur.com/mrKdmFQ.png" style="width:35%" border="1"></a>
+<a href="https://i.imgur.com/fcwHYPB.png" style="color:black;margin-right:0.5%"><img src="https://i.imgur.com/fcwHYPB.png" style="width:35%;" border="1"/></a>
+<a href="https://i.imgur.com/mrKdmFQ.png" style="color:black;"><img src="https://i.imgur.com/mrKdmFQ.png" style="width:35%" border="1"></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>Left: Spotlight. Right: Space Odyssey.</p></font></div>
 </div>
 

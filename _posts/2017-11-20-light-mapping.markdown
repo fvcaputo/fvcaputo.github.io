@@ -1,17 +1,17 @@
 ---
 layout: post
 title:  "Lightmaps and Normal Mapping"
-subtitle: <div style="margin-top:-15px;"><img src="http://i.imgur.com/92hqDAV.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/p8ZcGGO.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/mAUNY3h.jpg" style="width:32%;margin-bottom:5px;" border="1">With reliable texture loading added previously, now I further improved the engine to support light and normal mapping.
+subtitle: <div style="margin-top:-15px;"><img src="https://i.imgur.com/92hqDAV.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/p8ZcGGO.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/mAUNY3h.jpg" style="width:32%;margin-bottom:5px;" border="1">With reliable texture loading added previously, now I further improved the engine to support light and normal mapping.
 date:   2017-11-20 11:23:00
 language: en
-image: http://i.imgur.com/mAUNY3h.jpg
+image: https://i.imgur.com/mAUNY3h.jpg
 description: Some thoughts about dealing with lightmaps in OpenGL.
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
-<a href="http://i.imgur.com/92hqDAV.jpg" style="color: black;"><img src="http://i.imgur.com/92hqDAV.jpg" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/p8ZcGGO.jpg" style="color: black;"><img src="http://i.imgur.com/p8ZcGGO.jpg" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/mAUNY3h.jpg" style="color: black;"><img src="http://i.imgur.com/mAUNY3h.jpg" style="float: left; width: 32%" border="1"></a>
+<a href="https://i.imgur.com/92hqDAV.jpg" style="color: black;"><img src="https://i.imgur.com/92hqDAV.jpg" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="https://i.imgur.com/p8ZcGGO.jpg" style="color: black;"><img src="https://i.imgur.com/p8ZcGGO.jpg" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="https://i.imgur.com/mAUNY3h.jpg" style="color: black;"><img src="https://i.imgur.com/mAUNY3h.jpg" style="float: left; width: 32%" border="1"></a>
 <p><div style="text-align:center;"><font color="gray" size="2px"><p>From left to right, a textured plane without lightmaps, with lightmaps, and with lightmaps and normal map.</p></font></div></p>
 </div>
 
@@ -30,8 +30,8 @@ However, that only allowed me to create scenes with textured objects that did no
 So there are actually a number of different texture maps that can be used to improve the look of some object. Now, the first couple I implemented were diffuse and specular maps. The idea is not that complicated, instead of just mapping the texture to the geometry, we actually and those textures to the phong illumination model. This required some changes on how I stored and submitted data to the shaders, but most of the changes to actually get the effect only had to be done on the shaders (the fragment shader).
 
 <div align="center">
-<a href="http://i.imgur.com/NpOweqq.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/NpOweqq.png" style="width:35%;" border="1"/></a>
-<a href="http://i.imgur.com/NylY4j6.png" style="color:black;"><img src="http://i.imgur.com/NylY4j6.png" style="width:35%;" border="1"></a>
+<a href="https://i.imgur.com/NpOweqq.png" style="color:black;margin-right:0.5%"><img src="https://i.imgur.com/NpOweqq.png" style="width:35%;" border="1"/></a>
+<a href="https://i.imgur.com/NylY4j6.png" style="color:black;"><img src="https://i.imgur.com/NylY4j6.png" style="width:35%;" border="1"></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>Diffuse texture and Specular texture.</p></font></div>
 </div>
 
@@ -71,8 +71,8 @@ void main () {
 So, a few changes there. First, I changed some parts of the shader to use structs so that we would have wrappers for the relevant information. This was not really necessary, but it just made things much clearer. Then, after loading the textures and sending them to the shader, together with the texture coordinates, simply use the new values in the phong illumination to get the final result.
 
 <div align="center">
-<a href="http://i.imgur.com/92hqDAV.jpg" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/92hqDAV.jpg" style="width:35%;" border="1"/></a>
-<a href="http://i.imgur.com/p8ZcGGO.jpg" style="color:black;"><img src="http://i.imgur.com/p8ZcGGO.jpg" style="width:35%;" border="1"></a>
+<a href="https://i.imgur.com/92hqDAV.jpg" style="color:black;margin-right:0.5%"><img src="https://i.imgur.com/92hqDAV.jpg" style="width:35%;" border="1"/></a>
+<a href="https://i.imgur.com/p8ZcGGO.jpg" style="color:black;"><img src="https://i.imgur.com/p8ZcGGO.jpg" style="width:35%;" border="1"></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>Results, on the left no light effect, on the right using lightmaps we see how the object is supposed to react to the light.</p></font></div>
 </div>
 
@@ -87,7 +87,7 @@ With the general idea of using lightmaps down we can now start adding new effect
 With diffuse and specular maps we just need to deal with them like they are simple textures, read the texture files and the texture coordinates, submit them to the shaders and let the shader to the work. With the normal map things are different, we need to take into account what is commonly called the "Tangent Space".
 
 <div align="center">
-<a href="http://i.imgur.com/PsIJTsx.png" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/PsIJTsx.png" style="width:35%;" border="1"/></a>
+<a href="https://i.imgur.com/PsIJTsx.png" style="color:black;margin-right:0.5%"><img src="https://i.imgur.com/PsIJTsx.png" style="width:35%;" border="1"/></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>The normal map for our brick wall.</p></font></div>
 </div>
 
@@ -155,8 +155,8 @@ void main () {
 Then, for the following calculations of the phong illumination, instead of using the surface normal we use this new normal. The end result is a much more realistic object, with a "bumpy" look, without actually changing the geometry to add those bumps.
 
 <div align="center">
-<a href="http://i.imgur.com/p8ZcGGO.jpg" style="color:black;margin-right:0.5%"><img src="http://i.imgur.com/p8ZcGGO.jpg" style="width:35%;" border="1"/></a>
-<a href="http://i.imgur.com/mAUNY3h.jpg" style="color:black;"><img src="http://i.imgur.com/mAUNY3h.jpg" style="width:35%;" border="1"></a>
+<a href="https://i.imgur.com/p8ZcGGO.jpg" style="color:black;margin-right:0.5%"><img src="https://i.imgur.com/p8ZcGGO.jpg" style="width:35%;" border="1"/></a>
+<a href="https://i.imgur.com/mAUNY3h.jpg" style="color:black;"><img src="https://i.imgur.com/mAUNY3h.jpg" style="width:35%;" border="1"></a>
 <div style="text-align:center;"><font color="gray" size="2px"><p>On the left the wall only with the diffuse and specular textures, on the right the wall using the normal map.</p></font></div>
 </div>
 
@@ -167,5 +167,5 @@ Adding support to lightmaps makes it so that textured objects look a lot more re
 # References
 
 * [Learn OpenGL](https://learnopengl.com/#!Advanced-Lighting/Normal-Mapping) - Normal mapping tutorial.
-* [Opengl-Tutorial](http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-13-normal-mapping/) - Tutorial 13 : Normal Mapping.
+* [Opengl-Tutorial](https://www.opengl-tutorial.org/intermediate-tutorials/tutorial-13-normal-mapping/) - Tutorial 13 : Normal Mapping.
 * [CrazyBump](https://www.crazybump.com/) - Helpful tool to create/edit normal maps.

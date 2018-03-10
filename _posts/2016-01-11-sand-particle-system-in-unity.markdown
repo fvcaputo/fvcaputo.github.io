@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  "Simulating Sand Using Particle Systems"
-subtitle: <div style="margin-top:-15px;padding-bottom:5px;"><img src="http://i.imgur.com/AmT2sGa.png" style="width:33%;margin-right:0.5%"><img src="http://i.imgur.com/Vs4j2Ci.png" style="width:33%;margin-right:0.5%"><img src="http://i.imgur.com/tGJ0BxB.png" style="width:33%;"></div>Particle systems are fun by itself and we can use it to simulate all sorts of different things, so I decided to use one to simulate sand. This time using Unity as a framework.
+subtitle: <div style="margin-top:-15px;padding-bottom:5px;"><img src="https://i.imgur.com/AmT2sGa.png" style="width:33%;margin-right:0.5%"><img src="https://i.imgur.com/Vs4j2Ci.png" style="width:33%;margin-right:0.5%"><img src="https://i.imgur.com/tGJ0BxB.png" style="width:33%;"></div>Particle systems are fun by itself and we can use it to simulate all sorts of different things, so I decided to use one to simulate sand. This time using Unity as a framework.
 date:   2016-01-11 12:00:00
 language: en
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="http://i.imgur.com/AmT2sGa.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="http://i.imgur.com/Vs4j2Ci.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="http://i.imgur.com/tGJ0BxB.png" style="float: left; width: 33%">
+<img src="https://i.imgur.com/AmT2sGa.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://i.imgur.com/Vs4j2Ci.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://i.imgur.com/tGJ0BxB.png" style="float: left; width: 33%">
 <div style="text-align:center;"><font color="gray" size="2px">Falling sand on a few obstacles.</font></div>
 </div>
 
@@ -83,9 +83,9 @@ I will be talking more about updating the particle and the collisions below. The
 #### Collisions
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="http://i.imgur.com/Zb0kmD9.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="http://i.imgur.com/fry6POz.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="http://i.imgur.com/8HcsfBm.png" style="float: left; width: 33%">
+<img src="https://i.imgur.com/Zb0kmD9.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://i.imgur.com/fry6POz.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://i.imgur.com/8HcsfBm.png" style="float: left; width: 33%">
 <div style="text-align:center;"><font color="gray" size="2px">Particles created in a small space "explode" because they are penetrating each other. The simulation runs until it reaches an equilibrium.</font></div>
 </div>
 
@@ -120,9 +120,9 @@ Funky, right? The only change in the scene is the timestep of the integration, e
 # Cheating: Dealing with Different Collisions
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="http://i.imgur.com/OhJe9ZY.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="http://i.imgur.com/dVrnTD5.png" style="float: left; width: 33%; margin-right: 0.5%">
-<img src="http://i.imgur.com/Nz4tTwb.png" style="float: left; width: 33%">
+<img src="https://i.imgur.com/OhJe9ZY.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://i.imgur.com/dVrnTD5.png" style="float: left; width: 33%; margin-right: 0.5%">
+<img src="https://i.imgur.com/Nz4tTwb.png" style="float: left; width: 33%">
 <div style="text-align:center;"><font color="gray" size="2px">Sand falling on a body.</font></div>
 </div>
 
@@ -131,7 +131,7 @@ So I talked before about how collisions between spheres is really easy to detect
 Well, dealing with planes is simple. For instance, you know where the floor is beforehand (let's say it's y = 0), so you can just check the collision between the center of mass of the spheres and that plane, which is trivial. But the collision of spheres and boxes (what looks like I'm doing with the human body) is a whole different thing. That's why what I did to simplify this step was "cheat" and actually create invisible spheres that are placed in the same positions as the boxes that make the body, as you can see on the picture below. That gives a good enough result without having to implement a whole different method of collision detection to deal with that.
 
 <div style="text-align:center;padding-bottom:10px;">
-<img src="http://i.imgur.com/NrJ3qAm.png" style="width:40%;">
+<img src="https://i.imgur.com/NrJ3qAm.png" style="width:40%;">
 <div style="text-align:center;"><font color="gray" size="2px">This is what you are not seeing.</font></div>
 </div>
 
@@ -150,5 +150,5 @@ If you are interested in learning more about all this stuff, here are the refere
 * Nathan Bell, Yizhou Yu and Peter J. Mucha, _Particle-Based Simulation of Granular Materials_, Eurographics/ACM SIGGRAPH Symposium on Computer Animation (2005).
 
 [unity]: https://unity3d.com/
-[integration]: http://gafferongames.com/game-physics/integration-basics/
+[integration]: https://gafferongames.com/game-physics/integration-basics/
 [ocean]: https://www.lri.fr/~mbl/ENS/IG2/devoir2/files/docs/particles.pdf

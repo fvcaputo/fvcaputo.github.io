@@ -109,6 +109,6 @@ And that is the trick. Since we are looping and sampling the texture, we are for
 
 # References
 
-* [Metal Gear Solid V - Graphics Study](http://www.adriancourreges.com/blog/2017/12/15/mgs-v-graphics-study/) - Adrian Courrèges' blog has some great articles on computer graphics, this in particular talks about how scenes are rendered on MGSV.
+* [Metal Gear Solid V - Graphics Study](https://www.adriancourreges.com/blog/2017/12/15/mgs-v-graphics-study/) - Adrian Courrèges' blog has some great articles on computer graphics, this in particular talks about how scenes are rendered on MGSV.
 * [Deferred shading](https://en.wikipedia.org/wiki/Deferred_shading) - Wikipedia's article on deferred shading has some good info and history about the technique.
 * [Ivysaur Pokemon Free Sample](https://www.turbosquid.com/3d-models/free-obj-model-ivysaur-pokemon-sample/1136333) - Here is a link to the object I have used to render the scenes on this post, though in the end I had to slightly modify the object to work with my object loader (needed to change it to triangular faces and invert the normals).

@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  "Some Thoughts on Loading Image Files for Textured Objects"
-subtitle: <div style="margin-top:-15px;"><img src="http://i.imgur.com/1FTkgjD.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/G7elrzr.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="http://i.imgur.com/dBHTKr6.png" style="width:32%;margin-bottom:5px;" border="1">Advancing my OpenGL framework a few steps further by adding object loading and textures, here I'm going to talk a bit about the bumps I had along the way.
+subtitle: <div style="margin-top:-15px;"><img src="https://i.imgur.com/1FTkgjD.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/G7elrzr.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/dBHTKr6.png" style="width:32%;margin-bottom:5px;" border="1">Advancing my OpenGL framework a few steps further by adding object loading and textures, here I'm going to talk a bit about the bumps I had along the way.
 date:   2017-07-03 19:51:00
 language: en
 ---
 
 <div style="text-align:center;padding-bottom:10px;">
-<a href="http://i.imgur.com/1FTkgjD.png" style="color: black;"><img src="http://i.imgur.com/1FTkgjD.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/G7elrzr.png" style="color: black;"><img src="http://i.imgur.com/G7elrzr.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/dBHTKr6.png" style="color: black;"><img src="http://i.imgur.com/dBHTKr6.png" style="float: left; width: 32%" border="1"></a>
+<a href="https://i.imgur.com/1FTkgjD.png" style="color: black;"><img src="https://i.imgur.com/1FTkgjD.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="https://i.imgur.com/G7elrzr.png" style="color: black;"><img src="https://i.imgur.com/G7elrzr.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="https://i.imgur.com/dBHTKr6.png" style="color: black;"><img src="https://i.imgur.com/dBHTKr6.png" style="float: left; width: 32%" border="1"></a>
 <p><div style="text-align:center;"><font color="gray" size="2px"><p>Some pictures showing the object loader: our good old teapot with flat normals, a textured cube, and a scan of room from Google Tango.</p></font></div></p>
 </div>
 
@@ -27,7 +27,7 @@ Now, here is the part of reading files that got me thinking about making a post 
 
 # First Lesson About Reading Image Files by Yourself: Don't
 
-Alright, the title for this section is just a joke but one that has meaning behind it. Let me tell you how this "idea" came to be. Right now I'm developing this framework on a Mac, but it actually started back when I was in an older notebook running good old Linux. Back then I already got loading files and loading textures to work, but I did by using a library that I believe a lot of OpenGL devs probably run into at some point in their lives: [SOIL](http://www.lonesock.net/soil.html). This lib makes loading images rather simple, as easy as:
+Alright, the title for this section is just a joke but one that has meaning behind it. Let me tell you how this "idea" came to be. Right now I'm developing this framework on a Mac, but it actually started back when I was in an older notebook running good old Linux. Back then I already got loading files and loading textures to work, but I did by using a library that I believe a lot of OpenGL devs probably run into at some point in their lives: [SOIL](https://www.lonesock.net/soil.html). This lib makes loading images rather simple, as easy as:
 
 {% highlight c++ %}
 textureID = SOIL_load_OGL_texture
@@ -43,16 +43,16 @@ Pretty good, right? With the texture ID in place, you can send it to your shader
 
 # Reading Image Files: bitmaps
 
-I decided on doing it for a single image format, bitmaps. This was in part because one of the resources that I use to search information on OpenGL is the pretty useful website [opengl-tutorial](http://www.opengl-tutorial.org/), which has a chapter on loading a textured cube by reading an obj file with a bmp texture.
+I decided on doing it for a single image format, bitmaps. This was in part because one of the resources that I use to search information on OpenGL is the pretty useful website [opengl-tutorial](https://www.opengl-tutorial.org/), which has a chapter on loading a textured cube by reading an obj file with a bmp texture.
 
 Reading an image file for OpenGL is not as easy as throwing a file pointer to read the file and just dumping that data directly into a `glTexImage2D` call. It requires dealing with header files, knowing what kind of bitmap you have on your hands, what kind of data it has (RGB? RGBA? data described as unsigned bytes?) and where that data actually starts. This I learned by trying to do it. The "problem" with the tutorial on opengl-tutorial about reading bitmaps is that it doesn't go into much detail on this kind of file type, so if you just try to implement the code described on it you will probably run into some problems.
 
-Bitmaps, turns out, have [a lot of versions](http://www.fileformat.info/format/bmp/egff.htm). You cannot just trust that the header will have a fixed number of bytes, because some versions are different from the others. And if you don't know what version you have on your hands, you don't know where the important data is, and you will just end up believing that a certain information is on location, say, `0x0A` when it really isn't.
+Bitmaps, turns out, have [a lot of versions](https://www.fileformat.info/format/bmp/egff.htm). You cannot just trust that the header will have a fixed number of bytes, because some versions are different from the others. And if you don't know what version you have on your hands, you don't know where the important data is, and you will just end up believing that a certain information is on location, say, `0x0A` when it really isn't.
 
 <div style="text-align:center;padding-bottom:10px;">
-<a href="http://i.imgur.com/G7elrzr.png" style="color: black;"><img src="http://i.imgur.com/G7elrzr.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/iup6y6x.png" style="color: black;"><img src="http://i.imgur.com/iup6y6x.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
-<a href="http://i.imgur.com/IsQB2Ai.png" style="color: black;"><img src="http://i.imgur.com/IsQB2Ai.png" style="float: left; width: 32%" border="1"></a>
+<a href="https://i.imgur.com/G7elrzr.png" style="color: black;"><img src="https://i.imgur.com/G7elrzr.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="https://i.imgur.com/iup6y6x.png" style="color: black;"><img src="https://i.imgur.com/iup6y6x.png" style="float: left; width: 32%; margin-right: 0.5%" border="1"></a>
+<a href="https://i.imgur.com/IsQB2Ai.png" style="color: black;"><img src="https://i.imgur.com/IsQB2Ai.png" style="float: left; width: 32%" border="1"></a>
 <p><div style="text-align:center;"><font color="gray" size="2px"><p>How loading your texture can look: the right way, the "reading the image data from the wrong byte location" way and the "reading the wrong pixel format" way.</p></font></div></p>
 </div>
 
@@ -68,7 +68,7 @@ I ran into these problems with bitmaps exactly because of the different formats 
 
 # There And Back Again
 
-After some time lost trying to understand bitmap loads file I went back to the original idea of using a library to read an image. But instead if using something more high level as SOIL I went with something true and tried, perfected... you could even say official. I went to [libpng](http://www.libpng.org/pub/png/libpng.html), the "official PNG reference library" which "supports almost all PNG features, is extensible, and has been extensively tested for over 20 years". Beautiful stuff.
+After some time lost trying to understand bitmap loads file I went back to the original idea of using a library to read an image. But instead if using something more high level as SOIL I went with something true and tried, perfected... you could even say official. I went to [libpng](https://www.libpng.org/pub/png/libpng.html), the "official PNG reference library" which "supports almost all PNG features, is extensible, and has been extensively tested for over 20 years". Beautiful stuff.
 
 The idea here is to take advantage of what I learned I actually need from the image file plus a library that allows me to easily deal with "alien" values. The approach now is different. The png format does not have all these different versions of headers and whatnot that can ruin your loader, it's a much more rigid format. So now it's easy to find the information you want (and the APIs of libpng make it much more easier).
 
@@ -111,6 +111,6 @@ Also, can stress this enough, use a very simple object to test your loader. Don'
 # References
 
 * [imageHelper.cpp](https://github.com/fvcaputo/openglframework/blob/master/imageHelper.cpp) - My own image loader file, for reference.
-* [Opengl-Tutorial](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-5-a-textured-cube/) - Lesson 5: A textured cube.
+* [Opengl-Tutorial](https://www.opengl-tutorial.org/beginners-tutorials/tutorial-5-a-textured-cube/) - Lesson 5: A textured cube.
 * [Wikibooks OpenGL Programming](https://en.wikibooks.org/wiki/OpenGL_Programming/Intermediate/Textures#A_simple_libpng_example) - A simple libpng example.
-* [Libpng Manual](http://www.libpng.org/pub/png/libpng-manual.txt) - Libpng manual.
+* [Libpng Manual](https://www.libpng.org/pub/png/libpng-manual.txt) - Libpng manual.

@@ -27,14 +27,14 @@ A Ray Tracer engine written from the ground up in C++.
 The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/raytracer).
 <br>
 <div align="center">
-<a href="http://i.imgur.com/QKPD53g.png" style="color: black;"><img src="http://i.imgur.com/QKPD53g.png" style="width: 32%; margin-right: 0.5%"></a>
-<a href="http://i.imgur.com/uGuqSOk.png" style="color: black;"><img src="http://i.imgur.com/uGuqSOk.png" style="width: 32%; margin-right: 0.5%"></a>
-<a href="http://i.imgur.com/fKUDnof.png" style="color: black;"><img src="http://i.imgur.com/fKUDnof.png" style="width: 32%"></a>
+<a href="https://i.imgur.com/QKPD53g.png" style="color: black;"><img src="https://i.imgur.com/QKPD53g.png" style="width: 32%; margin-right: 0.5%"></a>
+<a href="https://i.imgur.com/uGuqSOk.png" style="color: black;"><img src="https://i.imgur.com/uGuqSOk.png" style="width: 32%; margin-right: 0.5%"></a>
+<a href="https://i.imgur.com/fKUDnof.png" style="color: black;"><img src="https://i.imgur.com/fKUDnof.png" style="width: 32%"></a>
 </div>
 <div align="center" style="padding-top:10px">
-<a href="http://i.imgur.com/RjSN5Gr.png" style="color: black;"><img src="http://i.imgur.com/RjSN5Gr.png" style="width: 32%; margin-right: 0.5%"></a>
-<a href="http://i.imgur.com/fcwHYPB.png" style="color: black;"><img src="http://i.imgur.com/fcwHYPB.png" style="width: 32%; margin-right: 0.5%"></a>
-<a href="http://i.imgur.com/7a99qgm.png" style="color: black;"><img src="http://i.imgur.com/7a99qgm.png" style=" width: 32%"></a>
+<a href="https://i.imgur.com/RjSN5Gr.png" style="color: black;"><img src="https://i.imgur.com/RjSN5Gr.png" style="width: 32%; margin-right: 0.5%"></a>
+<a href="https://i.imgur.com/fcwHYPB.png" style="color: black;"><img src="https://i.imgur.com/fcwHYPB.png" style="width: 32%; margin-right: 0.5%"></a>
+<a href="https://i.imgur.com/7a99qgm.png" style="color: black;"><img src="https://i.imgur.com/7a99qgm.png" style=" width: 32%"></a>
 </div>
 <br>
 
@@ -97,14 +97,14 @@ An OpenGL framework written from the ground up in C++ with a few helpful externa
 The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/openglframework).
 <br>
 <div align="center">
-<a href="http://i.imgur.com/Fc1T4zq.jpg" style="color: black;"><img src="http://i.imgur.com/Fc1T4zq.jpg" style="width: 32%; margin-right: 0.5%"></a>
-<a href="http://i.imgur.com/LuV2odd.jpg" style="color: black;"><img src="http://i.imgur.com/LuV2odd.jpg" style="width: 32%; margin-right: 0.5%"></a>
-<a href="http://i.imgur.com/dBHTKr6.png" style="color: black;"><img src="http://i.imgur.com/dBHTKr6.png" style="width: 32%"></a>
+<a href="https://i.imgur.com/Fc1T4zq.jpg" style="color: black;"><img src="https://i.imgur.com/Fc1T4zq.jpg" style="width: 32%; margin-right: 0.5%"></a>
+<a href="https://i.imgur.com/LuV2odd.jpg" style="color: black;"><img src="https://i.imgur.com/LuV2odd.jpg" style="width: 32%; margin-right: 0.5%"></a>
+<a href="https://i.imgur.com/dBHTKr6.png" style="color: black;"><img src="https://i.imgur.com/dBHTKr6.png" style="width: 32%"></a>
 </div>
 <div align="center" style="padding-top:10px">
-<a href="http://i.imgur.com/mAUNY3h.png" style="color: black;"><img src="http://i.imgur.com/mAUNY3h.png" style="width: 32%; margin-right: 0.5%"></a>
-<a href="http://i.imgur.com/vgbukjA.png" style="color: black;"><img src="http://i.imgur.com/vgbukjA.png" style="width: 32%; margin-right: 0.5%"></a>
-<a href="http://i.imgur.com/glXogdt.png" style="color: black;"><img src="http://i.imgur.com/glXogdt.png" style="width: 32%"></a>
+<a href="https://i.imgur.com/mAUNY3h.png" style="color: black;"><img src="https://i.imgur.com/mAUNY3h.png" style="width: 32%; margin-right: 0.5%"></a>
+<a href="https://i.imgur.com/vgbukjA.png" style="color: black;"><img src="https://i.imgur.com/vgbukjA.png" style="width: 32%; margin-right: 0.5%"></a>
+<a href="https://i.imgur.com/glXogdt.png" style="color: black;"><img src="https://i.imgur.com/glXogdt.png" style="width: 32%"></a>
 </div>
 <br>
 --------------------------------------------------------------------------------
