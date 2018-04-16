@@ -87,6 +87,6 @@ But I was seeing the invalid operation error around the first pass render, which
 
 ## Some Thoughts
 
-I wanted to write a little bit about this learning experience that I had while looking for errors in my code. When you are coding on your free time to learn new things, it's easy to just write code that "won't break" because you know how you are using everything. You might create a function that, if it receives some certain parameter, will simply break. However you are only using it for that one partifulcar script, and you only call it with correct values, so you don't bother with any kind of check on the parameters.
+I wanted to write a little bit about this learning experience that I had while looking for errors in my code. When you are coding on your free time to learn new things, it's easy to just write code that "won't break" because you know how you are using everything. You might create a function that, if it receives some certain parameter, will simply break. However you are only using it for that one particular script, and you only call it with correct values, so you don't bother with any kind of check on the parameters.
 
-Now, I'm not saying that you should strive for production level code on the stuff you are doing on the side to study and learn. But keep in mind that some error checking can help you a long way!
+Now, I'm not saying that you should strive for production level code on the stuff you are doing on the side to study and learn. But keep in mind that some error checking can help you a long way! Obviously this small change that I did (checking the OpenGL error flag), is very far from actually making my whole framework robust against errors, but it's another helpful layer against problems.
