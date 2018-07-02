@@ -4,6 +4,38 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
+# Path Tracer
+
+A Path Tracer written in Unity using compute shaders.
+
+#### Features
+
+- Monte Carlo integration of the Rendering Equation.
+- Lambert Diffuse and Phong Specular reflectance.
+- Temporal Anti-Aliasing.
+- Importance Sampling.
+- Objects with different materials (diffuse, specular, emissive, smooth).
+
+#### Related Posts
+
+- Nothing yet
+
+#### Resources
+
+The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/unitypathtracer).
+<br>
+<div align="center">
+<a href="https://i.imgur.com/mkciy1c.jpg" style="color: black;"><img src="https://i.imgur.com/mkciy1c.jpg" style="width: 49%; margin-right: 0.5%"></a>
+<a href="https://i.imgur.com/64BP2fn.jpg" style="color: black;"><img src="https://i.imgur.com/64BP2fn.jpg" style="width: 49%; margin-right: 0.5%"></a>
+</div>
+<div align="center" style="padding-top:10px">
+<a href="https://i.imgur.com/hDda46f.jpg" style="color: black;"><img src="https://i.imgur.com/hDda46f.jpg" style="width: 49%; margin-right: 0.5%"></a>
+<a href="https://i.imgur.com/t9F8UAF.jpg" style="color: black;"><img src="https://i.imgur.com/t9F8UAF.jpg" style="width: 49%; margin-right: 0.5%"></a>
+</div>
+<br>
+
+--------------------------------------------------------------------------------
+<br>
 # Ray Tracer
 
 A Ray Tracer engine written from the ground up in C++.
@@ -37,36 +69,6 @@ The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/r
 <a href="https://i.imgur.com/7a99qgm.png" style="color: black;"><img src="https://i.imgur.com/7a99qgm.png" style=" width: 32%"></a>
 </div>
 <br>
-
---------------------------------------------------------------------------------
-<br>
-# Virtual Theatre
-
-This project is diveded intwo applications, one is an application built using Unity and Vuforia to display Motion Capture data in an Augmented Reality experience and the other also built in Unity uses Microsoft's plugin to capture motion data.
-
-#### Features
-
-- Uses Vuforia SDK to display AR graphics through target recognition.
-- Can be deployed to any android smartphone/tablet device.
-- Uses the Moverio SDK to be able to run on the Epson Moverio BT-200 glasses.
-- Animation through Keyframing and TCB interpolation.
-- The application for motion tracking uses Microsoft's Kinect plugin to track the data.
-
-#### Related Posts
-
-- [Using Motion Capture to Animate Virtual Characters in a Physical Stage]({% post_url 2016-06-23-augmented-reality %})
-
-#### Resources
-
-The code for this project is separated into two repositories, the one to build the AR application ([here](https://github.com/fvcaputo/virtualtheatre)) and the one for motion capturing ([here](https://github.com/fvcaputo/kinectbodytracking)).
-
-#### Notes
-
-I developed this project during grad school, it was something that was developed in conjuntction to another project called Farewell to Dawn that was accepeted and presented as a poster project at [SIGGRAPH '16](https://dl.acm.org/citation.cfm?id=2945127&CFID=817523326&CFTOKEN=26501141). A video of it can be seen on the ACM page under "Source Materials".
-<br>
-<div style="text-align:center;padding-bottom:10px;">
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Hmh5L7BBmJM" frameborder="0" allowfullscreen></iframe>
-</div>
 
 --------------------------------------------------------------------------------
 <br>
@@ -107,6 +109,37 @@ The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/o
 <a href="https://i.imgur.com/glXogdt.png" style="color: black;"><img src="https://i.imgur.com/glXogdt.png" style="width: 32%"></a>
 </div>
 <br>
+
+--------------------------------------------------------------------------------
+<br>
+# Virtual Theatre
+
+This project is diveded intwo applications, one is an application built using Unity and Vuforia to display Motion Capture data in an Augmented Reality experience and the other also built in Unity uses Microsoft's plugin to capture motion data.
+
+#### Features
+
+- Uses Vuforia SDK to display AR graphics through target recognition.
+- Can be deployed to any android smartphone/tablet device.
+- Uses the Moverio SDK to be able to run on the Epson Moverio BT-200 glasses.
+- Animation through Keyframing and TCB interpolation.
+- The application for motion tracking uses Microsoft's Kinect plugin to track the data.
+
+#### Related Posts
+
+- [Using Motion Capture to Animate Virtual Characters in a Physical Stage]({% post_url 2016-06-23-augmented-reality %})
+
+#### Resources
+
+The code for this project is separated into two repositories, the one to build the AR application ([here](https://github.com/fvcaputo/virtualtheatre)) and the one for motion capturing ([here](https://github.com/fvcaputo/kinectbodytracking)).
+
+#### Notes
+
+I developed this project during grad school, it was something that was developed in conjuntction to another project called Farewell to Dawn that was accepeted and presented as a poster project at [SIGGRAPH '16](https://dl.acm.org/citation.cfm?id=2945127&CFID=817523326&CFTOKEN=26501141). A video of it can be seen on the ACM page under "Source Materials".
+<br>
+<div style="text-align:center;padding-bottom:10px;">
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Hmh5L7BBmJM" frameborder="0" allowfullscreen></iframe>
+</div>
+
 --------------------------------------------------------------------------------
 <br>
 # Sand Particle Simulation
