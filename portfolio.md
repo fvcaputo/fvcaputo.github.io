@@ -63,7 +63,7 @@ permalink: /portfolio/
      <h2>Sand Particle Simulation</h2>
         <p>
         A simulation of the behaviout of sand particles built using in Unity as a framework. Includes a custom particle system (emitter, position update, etc), collision detection, colission behaviour modelled after sand behaviour, animation of models though Runge-Kutta integration.
-        <br><br>Code available at the <a href="https://github.com/fvcaputo/sandparticlek">github repo</a>.
+        <br><br>Code available at the <a href="https://github.com/fvcaputo/sandparticle">github repo</a>.
         </p>
     </div>
     <div class="one-third column">
