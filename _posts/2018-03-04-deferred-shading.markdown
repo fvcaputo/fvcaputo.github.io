@@ -96,8 +96,9 @@ void main () {
     vec3 Albedo = texture(gColorAlb, uvTexCoord).rgb;
     vec3 Specular = texture(gColorSpec, uvTexCoord).rgb;
 
-    vec3 viewDir = normalize(CameraWorldPos - FragPos); // everything is in world pos!
-    vec3 lightDir = normalize(light.position - FragPos); // everything is in world pos!
+    // everything is in world pos!
+    vec3 viewDir = normalize(CameraWorldPos - FragPos);
+    vec3 lightDir = normalize(light.position - FragPos);
 
     // Calculate final color with phong shading normally...
 

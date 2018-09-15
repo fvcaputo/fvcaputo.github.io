@@ -1,166 +1,72 @@
 ---
 layout: page
-title: Portfolio
+title: Projects
 permalink: /portfolio/
 ---
 
-# Path Tracer
-
-A Path Tracer written in Unity using compute shaders.
-
-#### Features
-
-- Monte Carlo integration of the Rendering Equation.
-- Lambert Diffuse and Phong Specular reflectance.
-- Temporal Anti-Aliasing.
-- Importance Sampling.
-- Objects with different materials (diffuse, specular, emissive, smooth).
-
-#### Related Posts
-
-- Nothing yet
-
-#### Resources
-
-The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/unitypathtracer).
-<br>
-<div align="center">
-<a href="https://i.imgur.com/mkciy1c.jpg" style="color: black;"><img src="https://i.imgur.com/mkciy1c.jpg" style="width: 49%; margin-right: 0.5%"></a>
-<a href="https://i.imgur.com/64BP2fn.jpg" style="color: black;"><img src="https://i.imgur.com/64BP2fn.jpg" style="width: 49%; margin-right: 0.5%"></a>
-</div>
-<div align="center" style="padding-top:10px">
-<a href="https://i.imgur.com/hDda46f.jpg" style="color: black;"><img src="https://i.imgur.com/hDda46f.jpg" style="width: 49%; margin-right: 0.5%"></a>
-<a href="https://i.imgur.com/t9F8UAF.jpg" style="color: black;"><img src="https://i.imgur.com/t9F8UAF.jpg" style="width: 49%; margin-right: 0.5%"></a>
-</div>
-<br>
-
 --------------------------------------------------------------------------------
-<br>
-# Ray Tracer
-
-A Ray Tracer engine written from the ground up in C++.
-
-#### Features
-
-- Space partitioning data structure (k-d tree).
-- CPU Multithreading.
-- Texture Mapping support (both procedural and through image loading).
-- Model loading of .ply files.
-- Area lighting.
-- Volumetric Lighting through ray marching.
-
-#### Related Posts
-
-- [Implementing a Ray Tracer]({% post_url 2017-04-16-ray-tracer %})
-- [Creating Volumetric Lights and Shadows Through Ray Marching]({% post_url 2017-05-02-ray-marching %})
-
-#### Resources
-
-The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/raytracer).
-<br>
-<div align="center">
-<a href="https://i.imgur.com/QKPD53g.png" style="color: black;"><img src="https://i.imgur.com/QKPD53g.png" style="width: 32%; margin-right: 0.5%"></a>
-<a href="https://i.imgur.com/uGuqSOk.png" style="color: black;"><img src="https://i.imgur.com/uGuqSOk.png" style="width: 32%; margin-right: 0.5%"></a>
-<a href="https://i.imgur.com/fKUDnof.png" style="color: black;"><img src="https://i.imgur.com/fKUDnof.png" style="width: 32%"></a>
+<div class="row">
+    <div class="two-thirds column">
+     <h2>Path Tracer</h2>
+        <p>
+        A Path Tracer written in Unity using compute shaders. Includes Monte Carlo integration of the rendering equation, lambert diffuse and phong specular reflectance, temporal anti-aliasing, importance sampling, objects with different materials (diffuse, specular, emissive, smooth), etc.
+        <br><br>Code and more images available at the <a href="https://github.com/fvcaputo/unitypathtracer">github repo</a>.
+        </p>
+    </div>
+    <div class="one-third column">
+        <a href="https://i.imgur.com/jATdhda.png"><img src="https://i.imgur.com/jATdhda.png"></a>
+    </div>
 </div>
-<div align="center" style="padding-top:10px">
-<a href="https://i.imgur.com/RjSN5Gr.png" style="color: black;"><img src="https://i.imgur.com/RjSN5Gr.png" style="width: 32%; margin-right: 0.5%"></a>
-<a href="https://i.imgur.com/fcwHYPB.png" style="color: black;"><img src="https://i.imgur.com/fcwHYPB.png" style="width: 32%; margin-right: 0.5%"></a>
-<a href="https://i.imgur.com/7a99qgm.png" style="color: black;"><img src="https://i.imgur.com/7a99qgm.png" style=" width: 32%"></a>
-</div>
-<br>
-
 --------------------------------------------------------------------------------
-<br>
-# OpenGL Framework
-
-An OpenGL framework written from the ground up in C++ with a few helpful external libs. :)
-
-#### Features
-
-- Custom vertex and fragment shader reader.
-- Custom model loading of Wavefront files.
-- Primitives creator with mesh subdivision control (cube, spheres, cylinders).
-- Phong Illumination lighting.
-- Light mapping support (diffuse mapping, specular mapping, normal mapping).
-- Shadow mapping.
-- Deferred shading.
-
-#### Related Posts
-
-- [A C++ Framework For Interaction With OpenGL]({% post_url 2015-11-10-opengl-framework %})
-- [Some Thoughts on Loading Image Files for Textured Objects]({% post_url 2017-07-03-reading-textures %})
-- [Lightmaps and Normal Mapping]({% post_url 2017-11-20-light-mapping %})
-- [Framebuffers and Shadow Mapping]({% post_url 2017-12-10-shadow-mapping %})
-- [We've Got Deferred Shading]({% post_url 2018-03-04-deferred-shading %})
-
-#### Resources
-
-The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/openglframework).
-<br>
-<div align="center">
-<a href="https://i.imgur.com/Fc1T4zq.jpg" style="color: black;"><img src="https://i.imgur.com/Fc1T4zq.jpg" style="width: 32%; margin-right: 0.5%"></a>
-<a href="https://i.imgur.com/LuV2odd.jpg" style="color: black;"><img src="https://i.imgur.com/LuV2odd.jpg" style="width: 32%; margin-right: 0.5%"></a>
-<a href="https://i.imgur.com/dBHTKr6.png" style="color: black;"><img src="https://i.imgur.com/dBHTKr6.png" style="width: 32%"></a>
+<div class="row">
+    <div class="two-thirds column">
+     <h2>Ray Tracer</h2>
+        <p>
+        A Ray Tracer engine written from the ground up in C++. Includes space partitioning data structure (k-d tree), CPU multithreading, texture mapping support (both procedural and through image loading), model loading of .ply files, area lights and volumetric lighting through ray marching.
+        <br><br>Code and more images available at the <a href="https://github.com/fvcaputo/raytracer">github repo</a>.
+        </p>
+    </div>
+    <div class="one-third column">
+        <a href="https://i.imgur.com/QKPD53g.png"><img src="https://i.imgur.com/QKPD53g.png"></a>
+    </div>
 </div>
-<div align="center" style="padding-top:10px">
-<a href="https://i.imgur.com/mAUNY3h.png" style="color: black;"><img src="https://i.imgur.com/mAUNY3h.png" style="width: 32%; margin-right: 0.5%"></a>
-<a href="https://i.imgur.com/vgbukjA.png" style="color: black;"><img src="https://i.imgur.com/vgbukjA.png" style="width: 32%; margin-right: 0.5%"></a>
-<a href="https://i.imgur.com/glXogdt.png" style="color: black;"><img src="https://i.imgur.com/glXogdt.png" style="width: 32%"></a>
-</div>
-<br>
-
 --------------------------------------------------------------------------------
-<br>
-# Virtual Theatre
-
-This project is diveded intwo applications, one is an application built using Unity and Vuforia to display Motion Capture data in an Augmented Reality experience and the other also built in Unity uses Microsoft's plugin to capture motion data.
-
-#### Features
-
-- Uses Vuforia SDK to display AR graphics through target recognition.
-- Can be deployed to any android smartphone/tablet device.
-- Uses the Moverio SDK to be able to run on the Epson Moverio BT-200 glasses.
-- Animation through Keyframing and TCB interpolation.
-- The application for motion tracking uses Microsoft's Kinect plugin to track the data.
-
-#### Related Posts
-
-- [Using Motion Capture to Animate Virtual Characters in a Physical Stage]({% post_url 2016-06-23-augmented-reality %})
-
-#### Resources
-
-The code for this project is separated into two repositories, the one to build the AR application ([here](https://github.com/fvcaputo/virtualtheatre)) and the one for motion capturing ([here](https://github.com/fvcaputo/kinectbodytracking)).
-
-#### Notes
-
-I developed this project during grad school, it was something that was developed in conjuntction to another project called Farewell to Dawn that was accepeted and presented as a poster project at [SIGGRAPH '16](https://dl.acm.org/citation.cfm?id=2945127&CFID=817523326&CFTOKEN=26501141). A video of it can be seen on the ACM page under "Source Materials".
-<br>
-<div style="text-align:center;padding-bottom:10px;">
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Hmh5L7BBmJM" frameborder="0" allowfullscreen></iframe>
+<div class="row">
+    <div class="two-thirds column">
+     <h2>OpenGL Framework</h2>
+        <p>
+        An OpenGL framework written from the ground up in C++ with a few helpful external libs. Includes vertex and fragment shader reader, model loading of Wavefront files, primitives generator with mesh constrol, phong illumination, light mapping support (diffuse mapping, specular mapping, normal mapping), shadow mapping and deferred shading.
+        <br><br>Code and more images available at the <a href="https://github.com/fvcaputo/openglframework">github repo</a>.
+        </p>
+    </div>
+    <div class="one-third column">
+        <a href="https://i.imgur.com/Fc1T4zq.jpg"><img src="https://i.imgur.com/Fc1T4zq.jpg"></a>
+    </div>
 </div>
-
 --------------------------------------------------------------------------------
-<br>
-# Sand Particle Simulation
-
-A simulation of the behaviout of sand particles built using in Unity as a framework.
-
-#### Features
-
-- Custom Particle System (emitter, position update, etc).
-- Custom collision detection.
-- Colission behaviour modelled after sand behaviour.
-- Animation of models though Runge-Kutta integration.
-
-#### Related Posts
-
-- [Simulating Sand Using Particle Systems]({% post_url 2016-01-11-sand-particle-system-in-unity %})
-
-#### Resources
-
-The complete code is available at my [GitHub Repo](https://github.com/fvcaputo/sandparticle).
-<br>
-<div style="text-align:center;padding-bottom:10px;">
-<iframe width="640" height="360" src="https://www.youtube.com/embed/auhUHaOxI8o" frameborder="0" allowfullscreen></iframe>
+<div class="row">
+    <div class="two-thirds column">
+     <h2>Virtual Theatre</h2>
+        <p>
+        This project is divided intwo applications, one is an application built using Unity and Vuforia to display Motion Capture data in an Augmented Reality experience and the other also built in Unity uses Microsoft's plugin to capture motion data. Uses Vuforia SDK to display AR graphics, Uses the Moverio SDK to be able to run on the Epson Moverio BT-200 glasses, animation through Keyframing and TCB interpolation.
+        <br><br>The code for this project is separated into two repositories, one to build the AR application <a href="https://github.com/fvcaputo/virtualtheatre">here</a> and the one for motion capturing <a href="https://github.com/fvcaputo/kinectbodytracking">here</a>.
+        </p>
+    </div>
+    <div class="one-third column">
+        <a href="http://i.imgur.com/59plKev.png"><img src="http://i.imgur.com/59plKev.png"></a>
+        <a href="http://i.imgur.com/A3doLfK.png"><img src="http://i.imgur.com/A3doLfK.png" style="margin-top:10%"></a>
+    </div>
+</div>
+--------------------------------------------------------------------------------
+<div class="row">
+    <div class="two-thirds column">
+     <h2>Sand Particle Simulation</h2>
+        <p>
+        A simulation of the behaviout of sand particles built using in Unity as a framework. Includes a custom particle system (emitter, position update, etc), collision detection, colission behaviour modelled after sand behaviour, animation of models though Runge-Kutta integration.
+        <br><br>Code available at the <a href="https://github.com/fvcaputo/sandparticlek">github repo</a>.
+        </p>
+    </div>
+    <div class="one-third column">
+        <a href="https://i.imgur.com/Vs4j2Ci.png"><img src="https://i.imgur.com/Vs4j2Ci.png"></a>
+    </div>
 </div>
