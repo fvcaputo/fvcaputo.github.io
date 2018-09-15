@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Lightmaps and Normal Mapping"
-subtitle: <div style="margin-top:-15px;"><img src="https://i.imgur.com/92hqDAV.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/p8ZcGGO.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/mAUNY3h.jpg" style="width:32%;margin-bottom:5px;" border="1">With reliable texture loading added previously, now I further improved the engine to support light and normal mapping.
+subtitle: With reliable texture loading added previously, now I further improved the engine to support light and normal mapping. I have changed the object loading to get all the necessary files, the textures, and the calculation of the TBN matrix to get everything to work.
+subtitleImage: https://i.imgur.com/mAUNY3h.jpg
 date:   2017-11-20 11:23:00
 language: en
 image: https://i.imgur.com/mAUNY3h.jpg

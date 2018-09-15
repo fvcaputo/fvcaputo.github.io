@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "A C++ Framework For Interaction With OpenGL"
-subtitle: <div style="margin-top:-15px;padding-bottom:5px;"><img src="https://i.imgur.com/pGCaiQu.png"></div>Let’s talk a little bit about how to make stuff actually show using OpenGL.
+subtitle: Let’s talk a little bit about how to make stuff actually show using OpenGL. Here I'll talk about my engine which includes primitive mesh creation, phong illumination, camera manipulation, custom shader file readers, etc.
+subtitleImage: https://i.imgur.com/1FTkgjD.png
 date:   2015-11-11 12:07:00
 language: en
 ---

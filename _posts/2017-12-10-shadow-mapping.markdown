@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Framebuffers and Shadow Mapping"
-subtitle: <div style="margin-top:-15px;"><img src="https://i.imgur.com/77EkHMj.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/vgbukjA.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/glXogdt.jpg" style="width:32%;margin-bottom:5px;" border="1">Time to add shadow mapping to the engine, a feature that requires a better understanding of OpenGL's framebuffers.
+subtitle: Time to add shadow mapping to the engine, a feature that requires a better understanding of OpenGL's framebuffers. Here I'll discuss a bit about the depth map, shadow mapping and the "z" coordinate.
+subtitleImage: https://i.imgur.com/glXogdt.jpg
 date:   2017-12-10 10:33:00
 language: en
 image: https://i.imgur.com/glXogdt.jpg

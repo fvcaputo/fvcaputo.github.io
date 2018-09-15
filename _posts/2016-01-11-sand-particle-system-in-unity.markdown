@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Simulating Sand Using Particle Systems"
-subtitle: <div style="margin-top:-15px;padding-bottom:5px;"><img src="https://i.imgur.com/AmT2sGa.png" style="width:33%;margin-right:0.5%"><img src="https://i.imgur.com/Vs4j2Ci.png" style="width:33%;margin-right:0.5%"><img src="https://i.imgur.com/tGJ0BxB.png" style="width:33%;"></div>Particle systems are fun by itself and we can use it to simulate all sorts of different things, so I decided to use one to simulate sand. This time using Unity as a framework.
+subtitle: Particle systems are fun by itself and we can use it to simulate all sorts of different things, so I decided to use one to simulate sand. This time using Unity as a framework.
+subtitleImage: https://i.imgur.com/Vs4j2Ci.png
 date:   2016-01-11 12:00:00
 language: en
 ---

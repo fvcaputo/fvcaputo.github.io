@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Using Motion Capture to Animate Virtual Characters in a Physical Stage"
-subtitle: <div style="margin-top:-15px;padding-bottom:5px;"><img src="https://i.imgur.com/59plKev.png" style="width:49%;margin-right:0.5%"><img src="https://i.imgur.com/A3doLfK.png" style="width:49%"></div>This time let's play a bit with the Microsoft Kinect, Unity and use Vuforia to create an augmented reality application for mobile devices to create animations of virtual characters.
+subtitle: This time let's play a bit with the Microsoft Kinect, Unity and use Vuforia to create an augmented reality application for mobile devices to create animations of virtual characters.
+subtitleImage: https://i.imgur.com/A3doLfK.png
 date:   2016-06-23 12:00:00
 language: en
 ---

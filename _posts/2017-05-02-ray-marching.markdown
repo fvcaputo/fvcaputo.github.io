@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Creating Volumetric Lights and Shadows Through Ray Marching"
-subtitle: <div style="margin-top:-15px;"><img src="https://i.imgur.com/7a99qgm.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/fcwHYPB.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/mrKdmFQ.png" style="width:32%;margin-bottom:5px;" border="1">Now, taking advantage of the ray tracing engine I build some time ago, I decided to implement this little cool effect called volumetric lighting (or some times crepuscular rays, "god rays", etc).
+subtitle: Now, taking advantage of the ray tracing engine I build some time ago, I decided to implement this little cool effect called volumetric lighting (or some times crepuscular rays, "god rays", etc).
+subtitleImage: https://i.imgur.com/fcwHYPB.png
 date:   2017-05-02 08:51:00
 language: en
 ---

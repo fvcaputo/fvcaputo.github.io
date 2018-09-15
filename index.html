@@ -3,17 +3,18 @@ layout: default
 ---
 
 <div class="home">
-
-  <ul class="post-list">
+    <h1 class="post-title">Blog</h1>
     {% for post in site.posts %}
-      <li>
+    <hr>
+    <div class="row">
+      <div class="two-thirds column">
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <p class="post-subtitle">{{ post.subtitle }}</p>
-      </li>
+      </div>
+      <div class="one-third column">
+        <a href="{{ post.subtitleImage }}"><img src="{{ post.subtitleImage }}"></a>
+      </div>
+    </div>
     {% endfor %}
-  </ul>
-
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
 </div>

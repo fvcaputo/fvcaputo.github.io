@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Implementing a Ray Tracer"
-subtitle: <div style="margin-top:-15px;"><img src="https://i.imgur.com/QKPD53g.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/uGuqSOk.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/fKUDnof.png" style="width:32%;margin-bottom:5px;" border="1">The rite of passage for every computer graphics enthusiast? Well, there you go. Let's talk a bit about implementing a ray tracer (... from the ground up, yep, there you go).
+subtitle: The rite of passage for every computer graphics enthusiast? Well, there you go. Let's talk a bit about implementing a ray tracer, and some other features to make it work better/faster such as data structures and multithreading.
+subtitleImage: https://i.imgur.com/uGuqSOk.png
 date:   2017-04-16 14:25:00
 language: en
 ---

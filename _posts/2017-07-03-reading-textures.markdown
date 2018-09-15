@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Some Thoughts on Loading Image Files for Textured Objects"
-subtitle: <div style="margin-top:-15px;"><img src="https://i.imgur.com/1FTkgjD.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/G7elrzr.png" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/dBHTKr6.png" style="width:32%;margin-bottom:5px;" border="1">Advancing my OpenGL framework a few steps further by adding object loading and textures, here I'm going to talk a bit about the bumps I had along the way.
+subtitle: Advancing my OpenGL framework a few steps further by adding object loading and textures, here I'm going to talk a bit about the bumps I had along the way.
+subtitleImage: https://i.imgur.com/dBHTKr6.png
 date:   2017-07-03 19:51:00
 language: en
 ---

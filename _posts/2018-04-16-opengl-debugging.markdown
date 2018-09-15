@@ -2,6 +2,7 @@
 layout: post
 title:  "OpenGL Debugging"
 subtitle: Working on some OpenGL projects for a while now, I wanted to talk a little bit about debugging my own code.
+subtitleImage: https://i.imgur.com/3YcSnqr.png?1
 date:   2018-04-16 10:23:00
 language: en
 image: https://i.imgur.com/Fc1T4zq.jpg

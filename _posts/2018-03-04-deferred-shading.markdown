@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "We've Got Deferred Shading"
-subtitle: <div style="margin-top:-15px;"><img src="https://i.imgur.com/Fc1T4zq.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/NZiLxez.jpg" style="width:32%;margin-right:0.5%;margin-bottom:5px;" border="1"><img src="https://i.imgur.com/LuV2odd.jpg" style="width:32%;margin-bottom:5px;" border="1">After some experimenting with OpenGL's framebuffers previously, the next step was to implement deferred shading on the framework.
+subtitle: After some experimenting with OpenGL's framebuffers previously, the next step was to implement deferred shading on the framework. Here I'll talk a little bit about how I implemented it in my current engine, setting up the framebuffers and the gBuffer.
+subtitleImage: https://i.imgur.com/Fc1T4zq.jpg
 date:   2018-03-04 09:30:00
 language: en
 image: https://i.imgur.com/Fc1T4zq.jpg
@@ -17,7 +18,7 @@ description: Implementing deferred shading.
 
 Last time I worked on getting shadows to be rendered on my engine through depth mapping. That helped me better understand how to work with different framebuffers, how to render to textures and how to then read data from those textures.
 
-This time, with that knowledge, the next thing up was deferred shading. From what I understand, it`s a technique extensively used in games because it greatly speeds up rendering. This happens because the rendering engine does not need to iterate through every fragment of every object on the scene, even the ones that will not be rendered (fragments that are behind other fragments, etc), to calculate shading.
+This time, with that knowledge, the next thing up was deferred shading.It's a technique extensively used in games because it greatly speeds up rendering. This happens because the rendering engine does not need to iterate through every fragment of every object on the scene, even the ones that will not be rendered (fragments that are behind other fragments, etc), to calculate shading.
 
 To implement the technique I have created a basic gBuffer to store all the necessary data for rendering.
 
