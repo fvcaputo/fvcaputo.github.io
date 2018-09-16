@@ -35,7 +35,7 @@ permalink: /portfolio/
     <div class="two-thirds column">
      <h2>OpenGL Framework</h2>
         <p>
-        An OpenGL framework written from the ground up in C++ with a few helpful external libs. Includes vertex and fragment shader reader, model loading of Wavefront files, primitives generator with mesh constrol, phong illumination, light mapping support (diffuse mapping, specular mapping, normal mapping), shadow mapping and deferred shading.
+        An OpenGL framework written from the ground up in C++ with a few helpful external libs. Includes vertex and fragment shader reader, model loading of Wavefront files, primitives generator with mesh control, phong illumination, light mapping support (diffuse mapping, specular mapping, normal mapping), shadow mapping and deferred shading.
         <br><br>Code and more images available at the <a href="https://github.com/fvcaputo/openglframework">github repo</a>.
         </p>
     </div>
@@ -48,7 +48,7 @@ permalink: /portfolio/
     <div class="two-thirds column">
      <h2>Virtual Theatre</h2>
         <p>
-        This project is divided intwo applications, one is an application built using Unity and Vuforia to display Motion Capture data in an Augmented Reality experience and the other also built in Unity uses Microsoft's plugin to capture motion data. Uses Vuforia SDK to display AR graphics, Uses the Moverio SDK to be able to run on the Epson Moverio BT-200 glasses, animation through Keyframing and TCB interpolation.
+        This project is divided in two applications, one is an application built using Unity and Vuforia to display Motion Capture data in an Augmented Reality experience and the other also built in Unity uses Microsoft's plugin to capture motion data. Uses Vuforia SDK to display AR graphics, Uses the Moverio SDK to be able to run on the Epson Moverio BT-200 glasses, animation through Keyframing and TCB interpolation.
         <br><br>The code for this project is separated into two repositories, one to build the AR application <a href="https://github.com/fvcaputo/virtualtheatre">here</a> and the one for motion capturing <a href="https://github.com/fvcaputo/kinectbodytracking">here</a>.
         </p>
     </div>
