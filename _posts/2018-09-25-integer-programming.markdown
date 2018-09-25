@@ -3,7 +3,7 @@ layout: post
 title:  "Solving optimization problems using Integer Programming"
 subtitle: Let's talk a little about mathematical optimization and some cool programming paradigms we can use to solve some really hard problems.
 subtitleImage: https://i.imgur.com/2VUWRXM.jpg
-date:   2018-09-15 10:23:00
+date:   2018-09-25 06:23:00
 language: en
 image: https://i.imgur.com/2VUWRXM.jpg
 description: Integer Programming.
