@@ -53,8 +53,8 @@ permalink: /portfolio/
         </p>
     </div>
     <div class="one-third column">
-        <a href="http://i.imgur.com/59plKev.png"><img src="http://i.imgur.com/59plKev.png"></a>
-        <a href="http://i.imgur.com/A3doLfK.png"><img src="http://i.imgur.com/A3doLfK.png" style="margin-top:10%"></a>
+        <a href="https://i.imgur.com/59plKev.png"><img src="https://i.imgur.com/59plKev.png"></a>
+        <a href="https://i.imgur.com/A3doLfK.png"><img src="https://i.imgur.com/A3doLfK.png" style="margin-top:10%"></a>
     </div>
 </div>
 --------------------------------------------------------------------------------
