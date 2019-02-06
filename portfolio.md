@@ -7,6 +7,19 @@ permalink: /portfolio/
 --------------------------------------------------------------------------------
 <div class="row">
     <div class="two-thirds column">
+     <h2>Vulkan Projects</h2>
+        <p>
+        This is a collection of smaller projects using the Vulkan API. Here I have smaller programs that all implement a particular technique, or use some particular API from Vulkan. There include projects that setup the complete swapchain to display images on screen, setting up Vertex, Index and Staging Buffers. Also, a couple projects that use Compute Shaders to implement a Ray Tracer and save the rendered image back on an image. And more.
+        <br><br>Code and more images available at the <a href="https://github.com/fvcaputo/vulkan-projects">github repo</a>.
+        </p>
+    </div>
+    <div class="one-third column">
+        <a href="https://i.imgur.com/77LHk83.png"><img src="https://i.imgur.com/77LHk83.png"></a>
+    </div>
+</div>
+--------------------------------------------------------------------------------
+<div class="row">
+    <div class="two-thirds column">
      <h2>Path Tracer</h2>
         <p>
         A Path Tracer written in Unity using compute shaders. Includes Monte Carlo integration of the rendering equation, lambert diffuse and phong specular reflectance, temporal anti-aliasing, importance sampling, objects with different materials (diffuse, specular, emissive, smooth), etc.
