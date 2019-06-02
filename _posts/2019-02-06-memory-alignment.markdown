@@ -57,7 +57,7 @@ void createAndMapObjectsUniformBufferData() {
     Sphere sphere2 = {};
     Sphere sphere3 = {};
 
-    // setting up the values for all the chree spheres ...
+    // setting up the values for all the three spheres ...
 
     Sphere spheres[3] = { sphere1, sphere2, sphere3 };
     void* data;
